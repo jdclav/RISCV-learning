@@ -1,19 +1,17 @@
+`include "./counter.v"
+
 module bench();
    reg CLK;
    wire RESET = 0; 
-   wire [4:0] LEDS;
-   reg  RXD = 1'b0;
-   wire TXD;
+   wire [31:0] LEDS;
 
    SOC uut(
      .CLK(CLK),
      .RESET(RESET),
-     .LEDS(LEDS),
-     .RXD(RXD),
-     .TXD(TXD)
+     .LEDS(LEDS)
    );
 
-   reg[4:0] prev_LEDS = 0;
+   reg[31:0] prev_LEDS = 0;
    initial begin
       CLK = 0;
       forever begin
