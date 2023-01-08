@@ -11,3 +11,11 @@ end
 assign LEDS = count;
 
 endmodule
+
+module clock_divider (
+      input CLK,
+      input RESET,
+      output dCLK
+);
+
+endmodule
