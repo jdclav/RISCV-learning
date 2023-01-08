@@ -1,0 +1,10 @@
+ctrl + p to open palette
+ctrl + g to go to line #
+ctrl + d to find word match <- can set multiple cursors, alt click will also set multi cursor.
+ctrl + x to cut current line
+ctrl + / to comment out line
+ctrl + l to highlight current line
+ctrl + ` to open default terminal
+ctrl + (arrow) to move word by word
+Look into terminal tasks
+Configure user snippets
