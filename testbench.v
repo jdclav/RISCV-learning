@@ -1,30 +1,39 @@
 `include "./counter.v"
 
 module bench();
-   reg CLK;
-   wire RESET = 0; 
-   wire [31:0] LEDS;
+    reg CLK;
+    wire RESET = 0; 
+    wire [31:0] LEDS;
 
-   SOC uut(
-     .CLK(CLK),
-     .RESET(RESET),
-     .LEDS(LEDS)
-   );
+    clock_divider divide(
+        .CLK(CLK),
+        .RESET(RESET),
+        .dCLK(clk)
+    );
 
-   reg[31:0] prev_LEDS = 0;
+    SOC test(
+        .CLK(clk),
+        .RESET(RESET),
+        .LEDS(LEDS)
+    );
 
-   initial begin
-      CLK = 0;
-      forever begin
-	   #1 CLK = ~CLK;
+    reg[31:0] prev_LEDS = 0;
 
-      if(LEDS != prev_LEDS) begin
-         $display("LEDS = %b",LEDS);
-      end
+    wire clk;
 
-	   prev_LEDS <= LEDS;
 
-      end
-   end
+    initial begin
+        CLK = 0;
+        forever begin
+            #1 CLK = ~CLK;
+
+            if(LEDS != prev_LEDS) begin
+                $display("LEDS = %b",LEDS);
+            end
+
+            prev_LEDS <= LEDS;
+
+        end
+    end
 
 endmodule  
