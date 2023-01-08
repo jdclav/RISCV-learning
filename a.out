@@ -7,67 +7,94 @@
 :vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
-S_000001e0a5eee050 .scope module, "bench" "bench" 2 3;
+S_0000015d2b714850 .scope module, "bench" "bench" 2 3;
  .timescale 0 0;
-v000001e0a5eee410_0 .var "CLK", 0 0;
-v000001e0a5f72550_0 .net "LEDS", 31 0, L_000001e0a5eea260;  1 drivers
-L_000001e0a5fe9018 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
-v000001e0a5f725f0_0 .net "RESET", 0 0, L_000001e0a5fe9018;  1 drivers
-v000001e0a5f72690_0 .var "prev_LEDS", 31 0;
-S_000001e0a5eee1e0 .scope module, "uut" "SOC" 2 8, 3 1 0, S_000001e0a5eee050;
+v0000015d2b6f2730_0 .var "CLK", 0 0;
+v0000015d2b6f27d0_0 .net "LEDS", 31 0, L_0000015d2b6dc980;  1 drivers
+L_0000015d2b76d8e8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0000015d2b6f2870_0 .net "RESET", 0 0, L_0000015d2b76d8e8;  1 drivers
+v0000015d2b6f2910_0 .net "clk", 0 0, L_0000015d2b7b5940;  1 drivers
+v0000015d2b76d840_0 .var "prev_LEDS", 31 0;
+S_0000015d2b6de050 .scope module, "divide" "clock_divider" 2 9, 3 17 0, S_0000015d2b714850;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "CLK";
+    .port_info 1 /INPUT 1 "RESET";
+    .port_info 2 /OUTPUT 1 "dCLK";
+P_0000015d2b72a1c0 .param/l "DIV" 0 3 22, +C4<00000000000000000000000000010100>;
+v0000015d2b6f2dd0_0 .net "CLK", 0 0, v0000015d2b6f2730_0;  1 drivers
+v0000015d2b6dcb10_0 .net "RESET", 0 0, L_0000015d2b76d8e8;  alias, 1 drivers
+v0000015d2b6dc8e0_0 .net "dCLK", 0 0, L_0000015d2b7b5940;  alias, 1 drivers
+v0000015d2b6de1e0_0 .var "divided_clk", 20 0;
+E_0000015d2b72a7c0 .event posedge, v0000015d2b6f2dd0_0;
+L_0000015d2b7b5940 .part v0000015d2b6de1e0_0, 20, 1;
+S_0000015d2b6de280 .scope module, "test" "SOC" 2 15, 3 1 0, S_0000015d2b714850;
  .timescale 0 0;
     .port_info 0 /INPUT 1 "CLK";
     .port_info 1 /INPUT 1 "RESET";
     .port_info 2 /OUTPUT 32 "LEDS";
-L_000001e0a5eea260 .functor BUFZ 32, v000001e0a5eee370_0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
-v000001e0a5f72dd0_0 .net "CLK", 0 0, v000001e0a5eee410_0;  1 drivers
-v000001e0a5eea1c0_0 .net "LEDS", 31 0, L_000001e0a5eea260;  alias, 1 drivers
-v000001e0a5eeaf40_0 .net "RESET", 0 0, L_000001e0a5fe9018;  alias, 1 drivers
-v000001e0a5eee370_0 .var "count", 31 0;
-E_000001e0a5fa50f0 .event posedge, v000001e0a5f72dd0_0;
-    .scope S_000001e0a5eee1e0;
+L_0000015d2b6dc980 .functor BUFZ 32, v0000015d2b6f2690_0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0000015d2b6de410_0 .net "CLK", 0 0, L_0000015d2b7b5940;  alias, 1 drivers
+v0000015d2b6f2550_0 .net "LEDS", 31 0, L_0000015d2b6dc980;  alias, 1 drivers
+v0000015d2b6f25f0_0 .net "RESET", 0 0, L_0000015d2b76d8e8;  alias, 1 drivers
+v0000015d2b6f2690_0 .var "count", 31 0;
+E_0000015d2b72a3c0 .event posedge, v0000015d2b6dc8e0_0;
+    .scope S_0000015d2b6de050;
 T_0 ;
-    %pushi/vec4 0, 0, 32;
-    %store/vec4 v000001e0a5eee370_0, 0, 32;
+    %pushi/vec4 0, 0, 21;
+    %store/vec4 v0000015d2b6de1e0_0, 0, 21;
     %end;
     .thread T_0;
-    .scope S_000001e0a5eee1e0;
+    .scope S_0000015d2b6de050;
 T_1 ;
-    %wait E_000001e0a5fa50f0;
-    %load/vec4 v000001e0a5eee370_0;
-    %addi 1, 0, 32;
-    %assign/vec4 v000001e0a5eee370_0, 0;
+    %wait E_0000015d2b72a7c0;
+    %load/vec4 v0000015d2b6de1e0_0;
+    %addi 1, 0, 21;
+    %assign/vec4 v0000015d2b6de1e0_0, 0;
     %jmp T_1;
     .thread T_1;
-    .scope S_000001e0a5eee050;
+    .scope S_0000015d2b6de280;
 T_2 ;
     %pushi/vec4 0, 0, 32;
-    %store/vec4 v000001e0a5f72690_0, 0, 32;
+    %store/vec4 v0000015d2b6f2690_0, 0, 32;
     %end;
     .thread T_2;
-    .scope S_000001e0a5eee050;
+    .scope S_0000015d2b6de280;
 T_3 ;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v000001e0a5eee410_0, 0, 1;
-T_3.0 ;
-    %delay 1, 0;
-    %load/vec4 v000001e0a5eee410_0;
-    %inv;
-    %store/vec4 v000001e0a5eee410_0, 0, 1;
-    %load/vec4 v000001e0a5f72550_0;
-    %load/vec4 v000001e0a5f72690_0;
-    %cmp/ne;
-    %jmp/0xz  T_3.1, 4;
-    %vpi_call 2 20 "$display", "LEDS = %b", v000001e0a5f72550_0 {0 0 0};
-T_3.1 ;
-    %load/vec4 v000001e0a5f72550_0;
-    %assign/vec4 v000001e0a5f72690_0, 0;
-    %jmp T_3.0;
-    %end;
+    %wait E_0000015d2b72a3c0;
+    %load/vec4 v0000015d2b6f2690_0;
+    %addi 1, 0, 32;
+    %assign/vec4 v0000015d2b6f2690_0, 0;
+    %jmp T_3;
     .thread T_3;
+    .scope S_0000015d2b714850;
+T_4 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000015d2b76d840_0, 0, 32;
+    %end;
+    .thread T_4;
+    .scope S_0000015d2b714850;
+T_5 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000015d2b6f2730_0, 0, 1;
+T_5.0 ;
+    %delay 1, 0;
+    %load/vec4 v0000015d2b6f2730_0;
+    %inv;
+    %store/vec4 v0000015d2b6f2730_0, 0, 1;
+    %load/vec4 v0000015d2b6f27d0_0;
+    %load/vec4 v0000015d2b76d840_0;
+    %cmp/ne;
+    %jmp/0xz  T_5.1, 4;
+    %vpi_call 2 32 "$display", "LEDS = %b", v0000015d2b6f27d0_0 {0 0 0};
+T_5.1 ;
+    %load/vec4 v0000015d2b6f27d0_0;
+    %assign/vec4 v0000015d2b76d840_0, 0;
+    %jmp T_5.0;
+    %end;
+    .thread T_5;
 # The file index is used to find the file name in the following table.
 :file_names 4;
     "N/A";
     "<interactive>";
-    "test.v";
-    "././blink.v";
+    "testbench.v";
+    "././counter.v";
