@@ -1,3 +1,4 @@
+VScode keybinds
 ctrl + p to open palette
 ctrl + g to go to line #
 ctrl + d to find word match <- can set multiple cursors, alt click will also set multi cursor.
@@ -6,5 +7,23 @@ ctrl + / to comment out line
 ctrl + l to highlight current line
 ctrl + ` to open default terminal
 ctrl + (arrow) to move word by word
+
+VScode shortcuts
 Look into terminal tasks
 Configure user snippets
+
+j up a line
+k down a line
+h left a character
+l right a character
+ctrl + u .5 page up
+ctrl + d .5 page down
+ctrl + b page up
+ctrl + f page down
+0 start of line
+b back a word
+w next word
+^ start of line after whitespace
+$ end of line
+gg first line
+G last line
