@@ -1,4 +1,4 @@
-`include "RV32I/processor.v"
+`include "./processor.v"
 
 module bench();
     reg CLK;

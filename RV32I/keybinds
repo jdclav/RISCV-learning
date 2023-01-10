@@ -27,3 +27,4 @@ w next word
 $ end of line
 gg first line
 G last line
+yy copy line
