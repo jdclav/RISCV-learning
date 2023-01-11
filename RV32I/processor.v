@@ -130,6 +130,13 @@ module ALU (
     always @(*) begin
         case(funct3)
             3'b000: result = (ALU & funct7[5]) ? (value1 - value2) : (value1 + value2);
+            3'b001: result = (value1 << rs1);
+            3'b010: result = ($signed(value1) < $signed(value2));
+            3'b011: result = (value1 < value2);
+            3'b100: result = (value1 ^ value2);
+            3'b101: result = (funct7[5] ? ($signed(value1) >>> rs2) : (value1 >> rs2));
+            3'b110: result = (value1 | value2);
+            3'b111: result = (value1 & value2);
         endcase
     end
     assign ALUresult = result;
