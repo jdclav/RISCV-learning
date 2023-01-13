@@ -6,6 +6,7 @@ module SOC (
 
     reg [31:0] MEM [0:255];
     reg [31:0] PC = 0;
+    reg [31:0] LEDSoutput = 0;
 
     reg [31:0] rs1Register = 0;
     reg [31:0] rs2Register = 0;
@@ -17,15 +18,24 @@ module SOC (
     localparam memory = 3;
     localparam writeback = 4;
 
-
     reg[2:0] state = fetch;
     reg[31:0] instruction = 0;
 
+    //Preloaded instructions
+    initial begin
+        MEM[0] = 32'b0000000_00000_00000_000_00001_0110011;
+        MEM[1] = 32'b000000000001_00001_000_00001_0010011;
+        MEM[2] = 32'b000000000001_00001_000_00001_0010011;
+        MEM[3] = 32'b000000000001_00001_000_00001_0010011;
+        MEM[4] = 32'b000000000001_00001_000_00001_0010011;
+        MEM[6] = 32'b000000_00001_00010_010_00000_0100011;
+        MEM[7] = 32'b000000000001_00000_000_00000_1110011;
+    end
     //A state machine that controls each step of the processor
     always @(posedge CLK) begin
         case(state)
             fetch: begin
-                instruction <= MEM[PC];
+                instruction <= MEM[PC[31:2]];
                 state <= decode;
             end
             decode: begin
@@ -38,18 +48,21 @@ module SOC (
             end
             memory: begin
                 state <= writeback;
+                LEDSoutput <= instruction;
             end
             writeback: begin
                 if(writeEnable && rd != 0) begin
                     writeDataRegister <= 0;
                 end
-                PC <= PC + 1;
+                PC <= PC + 4;
+                state <= fetch;
             end
         endcase
     end
 
-    assign writeData = writeDataRegister;
+    assign LEDS = LEDSoutput;
 
+    assign writeData = writeDataRegister;
 
     wire [31:0] rs1Value = 0;
     wire [31:0] rs2Value = 0;
@@ -67,17 +80,6 @@ module SOC (
         .rs1Data(rs1Value),
         .rs2Data(rs2Value)
     );
-
-    //Preloaded instructions
-    initial begin
-        MEM[0] = 32'b0000000_00000_00000_000_00001_0110011;
-        MEM[1] = 32'b000000000001_00001_000_00001_0010011;
-        MEM[2] = 32'b000000000001_00001_000_00001_0010011;
-        MEM[3] = 32'b000000000001_00001_000_00001_0010011;
-        MEM[4] = 32'b000000000001_00001_000_00001_0010011;
-        MEM[6] = 32'b000000_00001_00010_010_00000_0100011;
-        MEM[7] = 32'b000000000001_00000_000_00000_1110011;
-    end
 
     //These wires represent the decoded opcode from an instruction. When a given wire goes to one that means that instruction is taking place
     wire LUI = (instruction[6:0] == 7'b0110111);
@@ -110,11 +112,9 @@ module SOC (
     wire [31:0] branchImmediate = {{20{instruction[31]}}, instruction[7], instruction[30:25], instruction[11:8], 1'b0};
     wire [31:0] jumpImmediate = {{12{instruction[31]}}, instruction[19:12], instruction[20], instruction[30:21], 1'b0};
 
-    assign LEDS = {{20{1'b0}}, LUI, AUIPC, JAL, JALR, ALUimm, ALU, branch, load, store, fence, system};
-
 endmodule
 
-//The module that will 
+// //The module that will 
 module ALU (
     input ALU,
     input ALUimm,
