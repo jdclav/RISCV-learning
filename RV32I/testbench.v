@@ -6,7 +6,7 @@ module bench();
     wire [31:0] LEDS;
 
 
-    clock_divider #(.DIV(20)) 
+    clock_divider #(.DIV(18)) 
     divide(
         .CLK(CLK),
         .RESET(RESET),
