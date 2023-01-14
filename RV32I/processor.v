@@ -130,20 +130,19 @@ module SOC (
 
     always @(posedge CLK) begin
         $display("PC=%0d",PC);
-        $display(funct7[5]);
-        case (1'b1)
-            ALU_I: $display("ALUreg rd=%d rs1=%d rs2=%d funct3=%b",rd, rs1, rs2, funct3);
-            ALUimm_I: $display("ALUimm rd=%d rs1=%d imm=%0d funct3=%b",rd, rs1, immediateImmediate, funct3);
-            branch_I: $display("BRANCH");
-            JAL_I:    $display("JAL");
-            JALR_I:   $display("JALR");
-            AUIPC_I:  $display("AUIPC");
-            LUI_I:    $display("LUI");	
-            load_I:   $display("LOAD");
-            store_I:  $display("STORE");
-            system_I: $display("SYSTEM");
-            fence_I: $display("FENCE");
-        endcase 
+        // case (1'b1)
+        //     ALU_I: $display("ALUreg rd=%d rs1=%d rs2=%d funct3=%b",rd, rs1, rs2, funct3);
+        //     ALUimm_I: $display("ALUimm rd=%d rs1=%d imm=%0d funct3=%b",rd, rs1, immediateImmediate, funct3);
+        //     branch_I: $display("BRANCH");
+        //     JAL_I:    $display("JAL");
+        //     JALR_I:   $display("JALR");
+        //     AUIPC_I:  $display("AUIPC");
+        //     LUI_I:    $display("LUI");	
+        //     load_I:   $display("LOAD");
+        //     store_I:  $display("STORE");
+        //     system_I: $display("SYSTEM");
+        //     fence_I: $display("FENCE");
+        // endcase 
     end
 
 endmodule
@@ -167,7 +166,15 @@ module ALU (
             3'b010: result = ($signed(value1) < $signed(value2));
             3'b011: result = (value1 < value2);
             3'b100: result = (value1 ^ value2);
-            3'b101: result = funct7[5] ? ($signed(value1) >>> rs2) : (value1 >> rs2);
+            3'b101: begin
+                $display("%b", funct7[5]);
+                if(funct7[5] == 1) begin
+                   result = $signed(value1) >>> rs2;
+                end 
+                else begin
+                    result = value1 >> rs2;
+                end
+            end
             3'b110: result = (value1 | value2);
             3'b111: result = (value1 & value2);
         endcase
@@ -224,7 +231,7 @@ module registerBanks (
         if(registerType == 0) begin
             if(writeEnable && rd != 0) begin
                 integerRegisters[rd] <= writeData;
-                $display(writeData);
+                $display("%b",writeData);
             end
             rs1Out <= integerRegisters[rs1];
             rs2Out <= integerRegisters[rs2];
