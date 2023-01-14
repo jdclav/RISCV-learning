@@ -22,20 +22,29 @@ module SOC (
 
     //Preloaded instructions
     `include "../Tools/riscv_assembly.v"
+    integer L0_=4;
     initial begin
-        ADD(x0,x0,x0);
+        // ADD(x0,x0,x0);
+        // ADD(x1,x0,x0);
+        // ADDI(x1,x1,1);
+        // ADDI(x1,x1,1);
+        // ADDI(x1,x1,1);
+        // ADDI(x1,x1,1);
+        // ADD(x2,x1,x0);
+        // ADD(x3,x1,x2);
+        // SRLI(x3,x3,3);
+        // SLLI(x3,x3,31);
+        // SRAI(x3,x3,5);
+        // SRLI(x1,x3,26);
+        // SUB(x4,x1,x2);
+        // XOR(x4,x1,x2);
+        // EBREAK();
         ADD(x1,x0,x0);
+        Label(L0_);
         ADDI(x1,x1,1);
-        ADDI(x1,x1,1);
-        ADDI(x1,x1,1);
-        ADDI(x1,x1,1);
-        ADD(x2,x1,x0);
-        ADD(x3,x1,x2);
-        SRLI(x3,x3,3);
-        SLLI(x3,x3,31);
-        SRAI(x3,x3,5);
-        SRLI(x1,x3,26);
+        JAL(x0,LabelRef(L0_));
         EBREAK();
+        endASM();
     end
 
     //A state machine that controls each step of the processor
@@ -55,7 +64,7 @@ module SOC (
                 state <= writeback;
             end
             writeback: begin
-                PC <= PC + 4;
+                PC <= nextPC;
                 state <= fetch;
             end
         endcase
@@ -63,16 +72,21 @@ module SOC (
 
     assign LEDS = LEDSoutput;
 
+    assign writeData = (JAL_I || JALR_I) ? (PC + 4) : writeDataALU;
 
-    assign writeEnable = ((ALU_I || ALUimm_I) & (state == writeback));
+    assign writeEnable = ((ALU_I || ALUimm_I || JAL_I || JALR_I) & (state == writeback));
 
     assign immediate = ALUimm_I;
 
+    assign nextPC = JAL_I ? PC + jumpImmediate : JALR_I ? value1Register + immediateImmediate : PC + 4;
+
     wire [31:0] rs1Value;
     wire [31:0] rs2Value;
-    wire [31:0] writeData;
+    wire [31:0] writeDataALU;
     wire writeEnable;
     wire writeStep;
+    wire [31:0] writeData;
+    wire [31:0] nextPC;
 
     registerBanks bank(
         .CLK(CLK),
@@ -167,7 +181,6 @@ module ALU (
             3'b011: result = (value1 < value2);
             3'b100: result = (value1 ^ value2);
             3'b101: begin
-                $display("%b", funct7[5]);
                 if(funct7[5] == 1) begin
                    result = $signed(value1) >>> rs2;
                 end 
