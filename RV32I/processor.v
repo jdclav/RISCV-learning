@@ -22,7 +22,7 @@ module SOC (
 
     //Preloaded instructions
     `include "../Tools/riscv_assembly.v"
-    integer L0_=4;
+    integer L0_=8;
     initial begin
         // ADD(x0,x0,x0);
         // ADD(x1,x0,x0);
@@ -40,9 +40,10 @@ module SOC (
         // XOR(x4,x1,x2);
         // EBREAK();
         ADD(x1,x0,x0);
+        ADDI(x2,x0,32);
         Label(L0_);
         ADDI(x1,x1,1);
-        JAL(x0,LabelRef(L0_));
+        BNE(x1,x2, LabelRef(L0_)); 
         EBREAK();
         endASM();
     end
@@ -78,7 +79,7 @@ module SOC (
 
     assign immediate = ALUimm_I;
 
-    assign nextPC = JAL_I ? PC + jumpImmediate : JALR_I ? value1Register + immediateImmediate : PC + 4;
+    assign nextPC = (branch_I && takeBranch) ? PC + branchImmediate : JAL_I ? PC + jumpImmediate : JALR_I ? value1Register + immediateImmediate : PC + 4;
 
     wire [31:0] rs1Value;
     wire [31:0] rs2Value;
@@ -87,6 +88,7 @@ module SOC (
     wire writeStep;
     wire [31:0] writeData;
     wire [31:0] nextPC;
+    wire takeBranch;
 
     registerBanks bank(
         .CLK(CLK),
@@ -108,7 +110,8 @@ module SOC (
         .value2(value2Register),
         .funct3(funct3),
         .funct7(funct7),
-        .ALUresult(writeData)
+        .ALUresult(writeData),
+        .takeBranch(takeBranch)
     );
 
     //These wires represent the decoded opcode from an instruction. When a given wire goes to one that means that instruction is taking place
@@ -144,19 +147,19 @@ module SOC (
 
     always @(posedge CLK) begin
         $display("PC=%0d",PC);
-        // case (1'b1)
-        //     ALU_I: $display("ALUreg rd=%d rs1=%d rs2=%d funct3=%b",rd, rs1, rs2, funct3);
-        //     ALUimm_I: $display("ALUimm rd=%d rs1=%d imm=%0d funct3=%b",rd, rs1, immediateImmediate, funct3);
-        //     branch_I: $display("BRANCH");
-        //     JAL_I:    $display("JAL");
-        //     JALR_I:   $display("JALR");
-        //     AUIPC_I:  $display("AUIPC");
-        //     LUI_I:    $display("LUI");	
-        //     load_I:   $display("LOAD");
-        //     store_I:  $display("STORE");
-        //     system_I: $display("SYSTEM");
-        //     fence_I: $display("FENCE");
-        // endcase 
+        case (1'b1)
+            ALU_I: $display("ALUreg rd=%d rs1=%d rs2=%d funct3=%b",rd, rs1, rs2, funct3);
+            ALUimm_I: $display("ALUimm rd=%d rs1=%d imm=%0d funct3=%b",rd, rs1, immediateImmediate, funct3);
+            branch_I: $display("BRANCH");
+            JAL_I:    $display("JAL");
+            JALR_I:   $display("JALR");
+            AUIPC_I:  $display("AUIPC");
+            LUI_I:    $display("LUI");	
+            load_I:   $display("LOAD");
+            store_I:  $display("STORE");
+            system_I: $display("SYSTEM");
+            fence_I: $display("FENCE");
+        endcase 
     end
 
 endmodule
@@ -170,7 +173,8 @@ module ALU (
     input [31:0] value2,
     input [2:0] funct3,
     input [6:0] funct7,
-    output [31:0] ALUresult
+    output [31:0] ALUresult,
+    output takeBranch
 );
     reg [31:0] result;
     always @(*) begin
@@ -192,6 +196,20 @@ module ALU (
             3'b111: result = (value1 & value2);
         endcase
     end
+
+    reg branch;
+    always @(*) begin
+        case(funct3)
+            3'b000: branch = (value1 == value2);
+            3'b001: branch = (value1 != value2);
+            3'b100: branch = ($signed(value1) < $signed(value2));
+            3'b101: branch = ($signed(value1) >= $signed(value2));
+            3'b110: branch = (value1 < value2);
+            3'b111: branch = (value1 >= value2);
+            default: branch = 1'b0;
+        endcase
+    end
+    assign takeBranch = branch;
     assign ALUresult = result;
 endmodule
 
