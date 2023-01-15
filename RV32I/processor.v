@@ -4,7 +4,59 @@ module SOC (
     output [31:0] LEDS
 );
 
-    reg [31:0] MEM [0:255];
+    program_memory rom(
+        .CLK(CLK),
+        .address(address),
+        .read(read),
+        .data(data)
+    );
+
+    processor CPU(
+        .CLK(CLK),
+        .data(data),
+        .address(address),
+        .read(read)
+    );
+
+    wire [31:0] address;
+    wire [31:0] data;
+    wire read;
+
+endmodule
+
+module processor (
+    input CLK,
+    input [31:0] data,
+    output [31:0] address,
+    output read
+);
+
+    //A state machine that controls each step of the processor
+    always @(posedge CLK) begin
+        case(state)
+            fetch: begin
+                state <= decode;
+            end
+            decode: begin
+                state <= execute;
+                instruction <= data;
+            end
+            execute: begin
+                state <= memory;
+            end
+            memory: begin
+                state <= writeback;
+            end
+            writeback: begin
+                PC <= nextPC;
+                state <= fetch;
+            end
+        endcase
+    end
+
+    assign read = (state == fetch);
+    assign address = PC;
+
     reg [31:0] PC = 0;
     reg [31:0] LEDSoutput = 0;
 
@@ -20,66 +72,15 @@ module SOC (
     reg[2:0] state = fetch;
     reg[31:0] instruction = 0;
 
-    //Preloaded instructions
-    `include "../Tools/riscv_assembly.v"
-    integer L0_=8;
-    initial begin
-        // ADD(x0,x0,x0);
-        // ADD(x1,x0,x0);
-        // ADDI(x1,x1,1);
-        // ADDI(x1,x1,1);
-        // ADDI(x1,x1,1);
-        // ADDI(x1,x1,1);
-        // ADD(x2,x1,x0);
-        // ADD(x3,x1,x2);
-        // SRLI(x3,x3,3);
-        // SLLI(x3,x3,31);
-        // SRAI(x3,x3,5);
-        // SRLI(x1,x3,26);
-        // SUB(x4,x1,x2);
-        // XOR(x4,x1,x2);
-        // EBREAK();
-        ADD(x1,x0,x0);
-        ADDI(x2,x0,32);
-        Label(L0_);
-        ADDI(x1,x1,1);
-        BNE(x1,x2, LabelRef(L0_)); 
-        EBREAK();
-        endASM();
-    end
-
-    //A state machine that controls each step of the processor
-    always @(posedge CLK) begin
-        case(state)
-            fetch: begin
-                instruction <= MEM[PC[31:2]];
-                state <= decode;
-            end
-            decode: begin
-                state <= execute;
-            end
-            execute: begin
-                state <= memory;
-            end
-            memory: begin
-                state <= writeback;
-            end
-            writeback: begin
-                PC <= nextPC;
-                state <= fetch;
-            end
-        endcase
-    end
-
     assign LEDS = LEDSoutput;
 
-    assign writeData = (JAL_I || JALR_I) ? (PC + 4) : writeDataALU;
+    assign writeData = (JAL_I || JALR_I) ? (PC + 4) : (LUI_I) ? upperImmediate : (AUIPC_I) ? (PC + upperImmediate) : writeDataALU;
 
     assign writeEnable = ((ALU_I || ALUimm_I || JAL_I || JALR_I) & (state == writeback));
 
     assign immediate = ALUimm_I;
 
-    assign nextPC = (branch_I && takeBranch) ? PC + branchImmediate : JAL_I ? PC + jumpImmediate : JALR_I ? value1Register + immediateImmediate : PC + 4;
+    assign nextPC = (branch_I && takeBranch) ? PC + branchImmediate : JAL_I ? PC + jumpImmediate : JALR_I ? {addition[31:1], 1'b0}: PC + 4;
 
     wire [31:0] rs1Value;
     wire [31:0] rs2Value;
@@ -89,6 +90,7 @@ module SOC (
     wire [31:0] writeData;
     wire [31:0] nextPC;
     wire takeBranch;
+    wire [31:0] addition;
 
     registerBanks bank(
         .CLK(CLK),
@@ -111,7 +113,8 @@ module SOC (
         .funct3(funct3),
         .funct7(funct7),
         .ALUresult(writeData),
-        .takeBranch(takeBranch)
+        .takeBranch(takeBranch),
+        .addition(addition)
     );
 
     //These wires represent the decoded opcode from an instruction. When a given wire goes to one that means that instruction is taking place
@@ -174,24 +177,33 @@ module ALU (
     input [2:0] funct3,
     input [6:0] funct7,
     output [31:0] ALUresult,
-    output takeBranch
+    output takeBranch,
+    output [31:0] addition
 );
+
+    function [31:0] flip;
+        input [31:0] in;
+        flip = {in[0],in[1],in[2],in[3],in[4],in[5],in[6],in[7],in[8],in[9],in[10],in[11],in[12],in[13],in[14],in[15],in[16],in[17],in[18],in[19],in[20],in[21],in[22],in[23],in[24],in[25],in[26],in[27],in[28],in[29],in[30],in[31]};
+    endfunction
+
+    wire [32:0] subtration = {1'b0,value1} - {1'b0,value2};
+    wire equal = (subtration[31:0] == 0);
+    wire lessThanUnsigned = subtration[32];
+    wire lessThan = (value1[31] ^ value2[31]) ? value1[31] : subtration[32];
+    wire [31:0] add = value1 + value2;
+    wire [31:0] shift_in = (funct3 == 3'b001) ? flip(value1) : value1;
+    wire [32:0] shifter = $signed({funct7[5] & value1[31], shift_in}) >>> rs2;
+    wire [31:0] left_shift = flip(shifter[31:0]);
+
     reg [31:0] result;
     always @(*) begin
         case(funct3)
-            3'b000: result = (ALU & funct7[5]) ? (value1 - value2) : (value1 + value2);
-            3'b001: result = (value1 << rs2);
-            3'b010: result = ($signed(value1) < $signed(value2));
-            3'b011: result = (value1 < value2);
+            3'b000: result = (ALU & funct7[5]) ? subtration[31:0] : add;
+            3'b001: result = left_shift;
+            3'b010: result = {31'b0, lessThan};
+            3'b011: result = {31'b0, lessThanUnsigned};
             3'b100: result = (value1 ^ value2);
-            3'b101: begin
-                if(funct7[5] == 1) begin
-                   result = $signed(value1) >>> rs2;
-                end 
-                else begin
-                    result = value1 >> rs2;
-                end
-            end
+            3'b101: result = shifter;
             3'b110: result = (value1 | value2);
             3'b111: result = (value1 & value2);
         endcase
@@ -200,18 +212,64 @@ module ALU (
     reg branch;
     always @(*) begin
         case(funct3)
-            3'b000: branch = (value1 == value2);
-            3'b001: branch = (value1 != value2);
-            3'b100: branch = ($signed(value1) < $signed(value2));
-            3'b101: branch = ($signed(value1) >= $signed(value2));
-            3'b110: branch = (value1 < value2);
-            3'b111: branch = (value1 >= value2);
+            3'b000: branch = equal;
+            3'b001: branch = !equal;
+            3'b100: branch = lessThan;
+            3'b101: branch = !lessThan;
+            3'b110: branch = lessThanUnsigned;
+            3'b111: branch = !lessThanUnsigned;
             default: branch = 1'b0;
         endcase
     end
     assign takeBranch = branch;
     assign ALUresult = result;
+    assign addition = add;
 endmodule
+
+module program_memory (
+    input CLK,
+    input [31:0] address,
+    input read,
+    output reg [31:0] data
+);
+
+    reg [31:0] MEM [0:255];
+
+    `include "../Tools/riscv_assembly.v"
+    integer L0_=8;
+    initial begin
+        ADD(x0,x0,x0);
+        ADD(x1,x0,x0);
+        ADDI(x1,x1,1);
+        ADDI(x1,x1,1);
+        ADDI(x1,x1,1);
+        ADDI(x1,x1,1);
+        ADD(x2,x1,x0);
+        ADD(x3,x1,x2);
+        SRLI(x3,x3,3);
+        SLLI(x3,x3,31);
+        SRAI(x3,x3,5);
+        SRLI(x1,x3,26);
+        SUB(x4,x1,x2);
+        XOR(x4,x1,x2);
+        EBREAK();
+        // ADD(x1,x0,x0);
+        // ADDI(x2,x0,32);
+        // Label(L0_);
+        // ADDI(x1,x1,1);
+        // BNE(x1,x2, LabelRef(L0_)); 
+        // EBREAK();
+        // endASM();
+    end
+
+    always @(posedge CLK) begin
+        if(read) begin
+            data <= MEM[address[31:2]];
+        end
+    end
+endmodule
+
+
 
 //Takes in a clock signal and outputs a signal 2^ of the parameter slower than the input
 module clock_divider (
