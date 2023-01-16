@@ -54,14 +54,14 @@ module processor (
         endcase
     end
 
-    assign read = (state == fetch);
-    assign address = PC;
+    assign read = (state == fetch || state == memory);
+    assign address = (state == fetch) ? PC : loadData;
 
     reg [31:0] PC = 0;
     reg [31:0] LEDSoutput = 0;
 
     wire [31:0] value1Register = rs1Value;
-    wire [31:0] value2Register = immediate ? immediateImmediate : rs2Value;
+    wire [31:0] value2Register = ALUimm_I ? immediateImmediate : rs2Value;
 
     localparam fetch = 0;
     localparam decode = 1;
@@ -74,14 +74,34 @@ module processor (
 
     assign LEDS = LEDSoutput;
 
-    assign writeData = (JAL_I || JALR_I) ? (PC + 4) : (LUI_I) ? upperImmediate : (AUIPC_I) ? (PC + upperImmediate) : writeDataALU;
+    assign writeData = (JAL_I || JALR_I) ? (PCplus4) : (LUI_I) ? upperImmediate : (AUIPC_I) ? PCplusImmediate : writeDataALU;
 
     assign writeEnable = ((ALU_I || ALUimm_I || JAL_I || JALR_I) & (state == writeback));
 
-    assign immediate = ALUimm_I;
+    assign nextPC = ((branch_I && takeBranch) || JAL_I) ? PCplusImmediate : JALR_I ? {addition[31:1], 1'b0}: PCplus4;
 
-    assign nextPC = (branch_I && takeBranch) ? PC + branchImmediate : JAL_I ? PC + jumpImmediate : JALR_I ? {addition[31:1], 1'b0}: PC + 4;
+    assign PCplusImmediate = PC + (JAL_I ? jumpImmediate : AUIPC_I ? upperImmediate : branchImmediate);
 
+    assign PCplus4 = PC + 4;
+
+    assign addressLoadStore = value1Register + immediateImmediate;
+
+    assign halfwordLoad = addressLoadStore[1] ? address[31:16] : address[15:0];
+
+    assign byteLoad = addressLoadStore[0] ? halfwordLoad[15:8] : halfwordLoad[7:0];
+
+    assign byteAccess = funct3[1:0] == 2'b00;
+
+    assign halfwordAccess = funct3[1:0] == 2'b01;
+
+    assign loadData = byteAccess ? {{24{loadSign}}, byteLoad} : halfwordAccess ? {{16{loadSign}}, halfwordLoad} : address;
+
+    assign loadSign = !funct3[2] & (byteAccess ? byteLoad[7] : halfwordLoad[15]);
+
+    wire loadSign; 
+    wire loadData;
+    wire byteAccess;
+    wire halfwordAccess;
     wire [31:0] rs1Value;
     wire [31:0] rs2Value;
     wire [31:0] writeDataALU;
@@ -91,6 +111,13 @@ module processor (
     wire [31:0] nextPC;
     wire takeBranch;
     wire [31:0] addition;
+    wire [31:0] PCplus4;
+    wire [31:0] PCplusImmediate;
+    wire [31:0] addressLoadStore;
+    wire [15:0] halfwordLoad;
+    wire [7:0] byteLoad;
+
+
 
     registerBanks bank(
         .CLK(CLK),
