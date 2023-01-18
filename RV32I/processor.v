@@ -7,27 +7,35 @@ module SOC (
     program_memory rom(
         .CLK(CLK),
         .address(address),
-        .read(read),
-        .data(data)
+        .writeData(writeData),
+        .writeMask(writeMask),
+        .readData(readData),
+        .read(read)
     );
 
     processor CPU(
         .CLK(CLK),
-        .data(data),
         .address(address),
+        .readData(readData),
+        .writeDataMemory(writeData),
+        .writeMask(writeMask), 
         .read(read)
     );
 
+    wire [31:0] writeData;
+    wire [3:0] writeMask;
     wire [31:0] address;
-    wire [31:0] data;
+    wire [31:0] readData;
     wire read;
 
 endmodule
 
 module processor (
     input CLK,
-    input [31:0] data,
     output [31:0] address,
+    input [31:0] readData,
+    output [31:0] writeDataMemory,
+    output [3:0] writeMask,
     output read
 );
 
@@ -39,7 +47,7 @@ module processor (
             end
             decode: begin
                 state <= execute;
-                instruction <= data;
+                instruction <= readData;
             end
             execute: begin
                 if(system_I) begin
@@ -77,7 +85,7 @@ module processor (
 
     assign LEDS = LEDSoutput;
 
-    assign writeData = (JAL_I || JALR_I) ? (PCplus4) : (LUI_I) ? upperImmediate : (AUIPC_I) ? PCplusImmediate : load_I ? loadData : writeDataALU;
+    assign writeDataRegister = (JAL_I || JALR_I) ? (PCplus4) : (LUI_I) ? upperImmediate : (AUIPC_I) ? PCplusImmediate : load_I ? loadData : writeDataALU;
 
     assign writeEnable = ((ALU_I || ALUimm_I || JAL_I || JALR_I || load_I || AUIPC_I) & (state == writeback));
 
@@ -87,9 +95,9 @@ module processor (
 
     assign PCplus4 = PC + 4;
 
-    assign addressLoadStore = value1Register + immediateImmediate;
+    assign addressLoadStore = value1Register + (load_I ? immediateImmediate : storeImmediate);
 
-    assign halfwordLoad = addressLoadStore[1] ? data[31:16] : data[15:0];
+    assign halfwordLoad = addressLoadStore[1] ? readData[31:16] : readData[15:0];
 
     assign byteLoad = addressLoadStore[0] ? halfwordLoad[15:8] : halfwordLoad[7:0];
 
@@ -97,7 +105,7 @@ module processor (
 
     assign halfwordAccess = funct3[1:0] == 2'b01;
 
-    assign loadData = byteAccess ? {{24{loadSign}}, byteLoad} : halfwordAccess ? {{16{loadSign}}, halfwordLoad} : data;
+    assign loadData = byteAccess ? {{24{loadSign}}, byteLoad} : halfwordAccess ? {{16{loadSign}}, halfwordLoad} : readData;
 
     assign loadSign = !funct3[2] & (byteAccess ? byteLoad[7] : halfwordLoad[15]);
 
@@ -110,7 +118,7 @@ module processor (
     wire [31:0] writeDataALU;
     wire writeEnable;
     wire writeStep;
-    wire [31:0] writeData;
+    wire [31:0] writeDataRegister;
     wire [31:0] nextPC;
     wire takeBranch;
     wire [31:0] addition;
@@ -129,7 +137,7 @@ module processor (
         .rd(rd),
         .registerType(1'b0),
         .writeEnable(writeEnable),
-        .writeData(writeData),
+        .writeData(writeDataRegister),
         .rs1Data(rs1Value),
         .rs2Data(rs2Value)
     );
@@ -260,12 +268,12 @@ module program_memory (
     input CLK,
     input [31:0] address,
     input read,
-    output reg [31:0] data
+    input [31:0] writeData,
+    input [3:0] writeMask,
+    output reg [31:0] readData
 );
 
     reg [31:0] MEM [0:255];
-
-    reg [31:0] test = 400;
 
     `include "../Tools/riscv_assembly.v"
     // integer L0_=8;
@@ -326,10 +334,18 @@ module program_memory (
         MEM[103] = {8'hff, 8'hf, 8'he, 8'hd};            
     end
 
+    wire [29:0] wordAddress = address[31:2];
+
     always @(posedge CLK) begin
         if(read) begin
-            data <= MEM[address[31:2]];
+            readData <= MEM[address[31:2]];
         end
+        case (1'b1)
+            writeMask[0]: MEM[wordAddress][7:0] <= writeData[7:0];
+            writeMask[1]: MEM[wordAddress][15:8] <= writeData[15:8];
+            writeMask[2]: MEM[wordAddress][23:16] <= writeData[23:16];
+            writeMask[3]: MEM[wordAddress][31:24] <= writeData[31:24];
+        endcase
     end
 endmodule
 
