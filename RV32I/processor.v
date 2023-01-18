@@ -42,6 +42,9 @@ module processor (
                 instruction <= data;
             end
             execute: begin
+                if(system_I) begin
+                    $finish();
+                end
                 state <= memory;
             end
             memory: begin
@@ -55,13 +58,13 @@ module processor (
     end
 
     assign read = (state == fetch || state == memory);
-    assign address = (state == fetch) ? PC : loadData;
+    assign address = (state == fetch) ? PC : addressLoadStore;
 
     reg [31:0] PC = 0;
     reg [31:0] LEDSoutput = 0;
 
     wire [31:0] value1Register = rs1Value;
-    wire [31:0] value2Register = ALUimm_I ? immediateImmediate : rs2Value;
+    wire [31:0] value2Register = ALUimm_I | JALR_I ? immediateImmediate : rs2Value;
 
     localparam fetch = 0;
     localparam decode = 1;
@@ -74,9 +77,9 @@ module processor (
 
     assign LEDS = LEDSoutput;
 
-    assign writeData = (JAL_I || JALR_I) ? (PCplus4) : (LUI_I) ? upperImmediate : (AUIPC_I) ? PCplusImmediate : writeDataALU;
+    assign writeData = (JAL_I || JALR_I) ? (PCplus4) : (LUI_I) ? upperImmediate : (AUIPC_I) ? PCplusImmediate : load_I ? loadData : writeDataALU;
 
-    assign writeEnable = ((ALU_I || ALUimm_I || JAL_I || JALR_I) & (state == writeback));
+    assign writeEnable = ((ALU_I || ALUimm_I || JAL_I || JALR_I || load_I || AUIPC_I) & (state == writeback));
 
     assign nextPC = ((branch_I && takeBranch) || JAL_I) ? PCplusImmediate : JALR_I ? {addition[31:1], 1'b0}: PCplus4;
 
@@ -86,7 +89,7 @@ module processor (
 
     assign addressLoadStore = value1Register + immediateImmediate;
 
-    assign halfwordLoad = addressLoadStore[1] ? address[31:16] : address[15:0];
+    assign halfwordLoad = addressLoadStore[1] ? data[31:16] : data[15:0];
 
     assign byteLoad = addressLoadStore[0] ? halfwordLoad[15:8] : halfwordLoad[7:0];
 
@@ -94,12 +97,12 @@ module processor (
 
     assign halfwordAccess = funct3[1:0] == 2'b01;
 
-    assign loadData = byteAccess ? {{24{loadSign}}, byteLoad} : halfwordAccess ? {{16{loadSign}}, halfwordLoad} : address;
+    assign loadData = byteAccess ? {{24{loadSign}}, byteLoad} : halfwordAccess ? {{16{loadSign}}, halfwordLoad} : data;
 
     assign loadSign = !funct3[2] & (byteAccess ? byteLoad[7] : halfwordLoad[15]);
 
     wire loadSign; 
-    wire loadData;
+    wire [31:0] loadData;
     wire byteAccess;
     wire halfwordAccess;
     wire [31:0] rs1Value;
@@ -139,7 +142,7 @@ module processor (
         .value2(value2Register),
         .funct3(funct3),
         .funct7(funct7),
-        .ALUresult(writeData),
+        .ALUresult(writeDataALU),
         .takeBranch(takeBranch),
         .addition(addition)
     );
@@ -262,24 +265,29 @@ module program_memory (
 
     reg [31:0] MEM [0:255];
 
+    reg [31:0] test = 400;
+
     `include "../Tools/riscv_assembly.v"
-    integer L0_=8;
+    // integer L0_=8;
+    integer L0_   = 8;
+    integer wait_ = 32;
+    integer L1_   = 40;
     initial begin
-        ADD(x0,x0,x0);
-        ADD(x1,x0,x0);
-        ADDI(x1,x1,1);
-        ADDI(x1,x1,1);
-        ADDI(x1,x1,1);
-        ADDI(x1,x1,1);
-        ADD(x2,x1,x0);
-        ADD(x3,x1,x2);
-        SRLI(x3,x3,3);
-        SLLI(x3,x3,31);
-        SRAI(x3,x3,5);
-        SRLI(x1,x3,26);
-        SUB(x4,x1,x2);
-        XOR(x4,x1,x2);
-        EBREAK();
+        // ADD(x0,x0,x0);
+        // ADD(x1,x0,x0);
+        // ADDI(x1,x1,1);
+        // ADDI(x1,x1,1);
+        // ADDI(x1,x1,1);
+        // ADDI(x1,x1,1);
+        // ADD(x2,x1,x0);
+        // ADD(x3,x1,x2);
+        // SRLI(x3,x3,3);
+        // SLLI(x3,x3,31);
+        // SRAI(x3,x3,5);
+        // SRLI(x1,x3,26);
+        // SUB(x4,x1,x2);
+        // XOR(x4,x1,x2);
+        // EBREAK();
         // ADD(x1,x0,x0);
         // ADDI(x2,x0,32);
         // Label(L0_);
@@ -287,6 +295,35 @@ module program_memory (
         // BNE(x1,x2, LabelRef(L0_)); 
         // EBREAK();
         // endASM();
+        
+
+
+        LI(s0,0);   
+        LI(s1,4);
+        Label(L0_); 
+        LB(a0,s0,400); // LEDs are plugged on a0 (=x10)
+        CALL(LabelRef(wait_));
+        ADDI(s0,s0,1); 
+        BNE(s0,s1, LabelRef(L0_));
+        EBREAK();
+
+        Label(wait_);
+        LI(t0,1);
+        SLLI(t0,t0,1);
+        Label(L1_);
+        ADDI(t0,t0,-1);
+        BNEZ(t0,LabelRef(L1_));
+        RET();
+
+        // endASM();
+
+        // Note: index 100 (word address)
+        //     corresponds to 
+        // address 400 (byte address)
+        MEM[100] = {8'h4, 8'h3, 8'h2, 8'h1};
+        MEM[101] = {8'h8, 8'h7, 8'h6, 8'h5};
+        MEM[102] = {8'hc, 8'hb, 8'ha, 8'h9};
+        MEM[103] = {8'hff, 8'hf, 8'he, 8'hd};            
     end
 
     always @(posedge CLK) begin
@@ -347,7 +384,7 @@ module registerBanks (
         if(registerType == 0) begin
             if(writeEnable && rd != 0) begin
                 integerRegisters[rd] <= writeData;
-                $display("%b",writeData);
+                $display("Register Write %b",writeData);
             end
             rs1Out <= integerRegisters[rs1];
             rs2Out <= integerRegisters[rs2];
