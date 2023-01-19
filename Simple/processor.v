@@ -4,6 +4,9 @@ module SOC (
     output [31:0] LEDS
 );
 
+    //Currently acts as both program memory and data memory. When provided an address the data at that address will either
+    //output the data (aligned by the word) to the readData line if the read line is high or write data to the address with a 
+    //writeMask that determines which byte of the word is written to
     program_memory rom(
         .CLK(CLK),
         .address(address),
@@ -13,6 +16,8 @@ module SOC (
         .read(read)
     );
 
+    //The processor takes data in through its readData line based on the address provided on the address line. See above comment
+    //for more details on the interaction with memory
     processor CPU(
         .CLK(CLK),
         .address(address),
@@ -65,12 +70,17 @@ module processor (
         endcase
     end
 
-    assign read = (state == fetch || (state == memory && !store_I));
+    //Reading is enabled (read line set high) if the state is fetch or the state is memory and data is being read.
+    assign read = (state == fetch || (state == memory && load_I));
+    //The address to be read which will either be the next instruction(PC) or the address for a data access.
     assign address = (state == fetch) ? PC : addressLoadStore;
 
+    //PC is the program counter and tracks which instruction is being processed.
     reg [31:0] PC = 0;
     reg [31:0] LEDSoutput = 0;
 
+    //The value1Register holds the value from the first source register. The value2Register holds the value from the second
+    //source register if there is one or an immediate value if relavent
     wire [31:0] value1Register = rs1Value;
     wire [31:0] value2Register = ALUimm_I | JALR_I ? immediateImmediate : rs2Value;
 
