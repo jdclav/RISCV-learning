@@ -65,7 +65,7 @@ module processor (
         endcase
     end
 
-    assign read = (state == fetch || state == memory);
+    assign read = (state == fetch || (state == memory && !store_I));
     assign address = (state == fetch) ? PC : addressLoadStore;
 
     reg [31:0] PC = 0;
@@ -87,7 +87,7 @@ module processor (
 
     assign writeDataRegister = (JAL_I || JALR_I) ? (PCplus4) : (LUI_I) ? upperImmediate : (AUIPC_I) ? PCplusImmediate : load_I ? loadData : writeDataALU;
 
-    assign writeEnable = ((ALU_I || ALUimm_I || JAL_I || JALR_I || load_I || AUIPC_I) & (state == writeback));
+    assign writeEnable = ((!branch_I && !store_I) & (state == writeback));
 
     assign nextPC = ((branch_I && takeBranch) || JAL_I) ? PCplusImmediate : JALR_I ? {addition[31:1], 1'b0}: PCplus4;
 
@@ -109,6 +109,19 @@ module processor (
 
     assign loadSign = !funct3[2] & (byteAccess ? byteLoad[7] : halfwordLoad[15]);
 
+    assign writeDataMemory[7:0] = value2Register [7:0];
+
+    assign writeDataMemory[15:8] = addressLoadStore[0] ? value2Register[7:0] : value2Register[15:8];
+
+    assign writeDataMemory[23:16] = addressLoadStore[1] ? value2Register[7:0] : value2Register[23:16];
+
+    assign writeDataMemory[31:24] = addressLoadStore[0] ? value2Register[7:0] : addressLoadStore[1] ? value2Register[15:8] : value2Register [31:24];
+
+    assign storeMask = byteAccess ? (addressLoadStore[1] ? (addressLoadStore[0] ? 4'b1000 : 4'b0100) : (addressLoadStore[0] ? 4'b0010 : 4'b0001)) : halfwordAccess ? (addressLoadStore[1] ? 4'b1100 : 4'b0011) : 4'b1111;
+
+    assign writeMask = {4{(state == memory && store_I)}} & storeMask;
+
+    wire [31:0] storeMask;
     wire loadSign; 
     wire [31:0] loadData;
     wire byteAccess;
@@ -127,8 +140,6 @@ module processor (
     wire [31:0] addressLoadStore;
     wire [15:0] halfwordLoad;
     wire [7:0] byteLoad;
-
-
 
     registerBanks bank(
         .CLK(CLK),
@@ -275,55 +286,42 @@ module program_memory (
 
     reg [31:0] MEM [0:255];
 
-    `include "../Tools/riscv_assembly.v"
-    // integer L0_=8;
-    integer L0_   = 8;
-    integer wait_ = 32;
-    integer L1_   = 40;
+    `include "../tools/riscv_assembly.v"
+    integer L0_   = 12;
+    integer L1_   = 32;
+    integer wait_ = 64;   
+    integer L2_   = 72;
+
     initial begin
-        // ADD(x0,x0,x0);
-        // ADD(x1,x0,x0);
-        // ADDI(x1,x1,1);
-        // ADDI(x1,x1,1);
-        // ADDI(x1,x1,1);
-        // ADDI(x1,x1,1);
-        // ADD(x2,x1,x0);
-        // ADD(x3,x1,x2);
-        // SRLI(x3,x3,3);
-        // SLLI(x3,x3,31);
-        // SRAI(x3,x3,5);
-        // SRLI(x1,x3,26);
-        // SUB(x4,x1,x2);
-        // XOR(x4,x1,x2);
-        // EBREAK();
-        // ADD(x1,x0,x0);
-        // ADDI(x2,x0,32);
-        // Label(L0_);
-        // ADDI(x1,x1,1);
-        // BNE(x1,x2, LabelRef(L0_)); 
-        // EBREAK();
-        // endASM();
-        
 
-
-        LI(s0,0);   
-        LI(s1,4);
+        LI(a0,0);
+        LI(s1,4);      
+        LI(s0,0);         
         Label(L0_); 
-        LB(a0,s0,400); // LEDs are plugged on a0 (=x10)
-        CALL(LabelRef(wait_));
+        LB(a1,s0,400);
+        SB(a1,s0,800);       
+        //CALL(LabelRef(wait_));
         ADDI(s0,s0,1); 
         BNE(s0,s1, LabelRef(L0_));
+
+        // Read 16 bytes from adress 800
+        LI(s0,0);
+        Label(L1_);
+        LB(a0,s0,800); // a0 (=x10) is plugged to the LEDs
+        //CALL(LabelRef(wait_));
+        ADDI(s0,s0,1); 
+        BNE(s0,s1, LabelRef(L1_));
         EBREAK();
 
         Label(wait_);
         LI(t0,1);
         SLLI(t0,t0,1);
-        Label(L1_);
+        Label(L2_);
         ADDI(t0,t0,-1);
-        BNEZ(t0,LabelRef(L1_));
+        BNEZ(t0,LabelRef(L2_));
         RET();
 
-        // endASM();
+        endASM();
 
         // Note: index 100 (word address)
         //     corresponds to 
