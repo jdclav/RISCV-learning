@@ -1,4 +1,4 @@
-`include "Simple/processor.v"
+`include "Pipline/processor.v"
 
 module bench();
     reg CLK;
