@@ -1,10 +1,14 @@
 `include "Simple/processor.v"
 
-module bench();
+module bench(    
+    input clk30,
+    output [6:0] led_rgb_multiplex_a,
+    output [2:0] led_rgb_multiplex_b
+);
     reg CLK;
     wire RESET = 0; 
     wire [31:0] LEDS;
-
+   
     //Used to slow down operation so that outputs can be observed. 18 works pretty well to observe outputs.
     clock_divider #(.DIV(18)) 
     divide(
