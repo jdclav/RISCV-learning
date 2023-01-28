@@ -35,7 +35,7 @@
         }
       },
       "cells": {
-        "$specify$17": {
+        "$specify$24": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -66,7 +66,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$18": {
+        "$specify$25": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -97,7 +97,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$19": {
+        "$specify$26": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -128,7 +128,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$20": {
+        "$specify$27": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -159,7 +159,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$21": {
+        "$specify$28": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -274,7 +274,7 @@
         }
       },
       "cells": {
-        "$specify$22": {
+        "$specify$29": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -305,7 +305,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$23": {
+        "$specify$30": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -336,7 +336,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$24": {
+        "$specify$31": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -367,7 +367,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$25": {
+        "$specify$32": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -398,7 +398,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$26": {
+        "$specify$33": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -429,7 +429,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$27": {
+        "$specify$34": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -555,7 +555,7 @@
         }
       },
       "cells": {
-        "$specify$28": {
+        "$specify$35": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -586,7 +586,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$29": {
+        "$specify$36": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -617,7 +617,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$30": {
+        "$specify$37": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -648,7 +648,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$31": {
+        "$specify$38": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -679,7 +679,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$32": {
+        "$specify$39": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -710,7 +710,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$33": {
+        "$specify$40": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -741,7 +741,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$34": {
+        "$specify$41": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -14551,8 +14551,9 @@
     },
     "L6MUX21": {
       "attributes": {
-        "abc9_box": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_box": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_sim.v:65.1-72.10"
       },
       "ports": {
@@ -21191,7 +21192,7 @@
     "top": {
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "blink.v:10.1-54.10"
+        "src": "fsm_mealy.v:2.1-74.10"
       },
       "ports": {
         "clk30": {
@@ -21223,7 +21224,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21265,7 +21266,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21307,7 +21308,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21349,7 +21350,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21391,7 +21392,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21433,7 +21434,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21475,7 +21476,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21517,7 +21518,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21559,7 +21560,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21601,7 +21602,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21643,7 +21644,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21685,7 +21686,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21727,7 +21728,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21769,7 +21770,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21811,7 +21812,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21853,7 +21854,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -21897,7 +21898,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -21925,7 +21926,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -21953,7 +21954,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22006,7 +22007,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22059,7 +22060,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22112,7 +22113,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22165,7 +22166,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22218,7 +22219,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22271,7 +22272,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22324,7 +22325,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22377,7 +22378,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22430,7 +22431,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22508,7 +22509,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22536,7 +22537,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22589,7 +22590,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22642,7 +22643,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22695,7 +22696,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22748,7 +22749,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22801,7 +22802,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22854,7 +22855,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22907,7 +22908,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22960,7 +22961,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23013,7 +23014,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23091,7 +23092,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23119,7 +23120,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23172,7 +23173,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23250,7 +23251,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23303,7 +23304,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23356,7 +23357,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23409,7 +23410,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23462,7 +23463,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23515,7 +23516,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:58.5-66.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -23555,806 +23556,6 @@
             "Z": [ 155 ]
           }
         },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 63 ],
-            "Z": [ 92 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_1": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 62 ],
-            "Z": [ 94 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_10": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 91 ],
-            "Z": [ 96 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_11": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 90 ],
-            "Z": [ 98 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_12": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 28 ],
-            "Z": [ 100 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_13": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 27 ],
-            "Z": [ 102 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_14": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 33 ],
-            "Z": [ 104 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_15": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 32 ],
-            "Z": [ 106 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_16": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 38 ],
-            "Z": [ 108 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_17": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 37 ],
-            "Z": [ 110 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_18": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 43 ],
-            "Z": [ 112 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_19": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 42 ],
-            "Z": [ 114 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_2": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 72 ],
-            "Z": [ 116 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_20": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 47 ],
-            "Z": [ 118 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_21": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 46 ],
-            "Z": [ 120 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_22": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 17 ],
-            "Z": [ 122 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_23": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 16 ],
-            "Z": [ 124 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_24": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 22 ],
-            "Z": [ 126 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_25": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 21 ],
-            "Z": [ 128 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_26": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 57 ],
-            "Z": [ 130 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_27": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 56 ],
-            "Z": [ 132 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_28": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 67 ],
-            "Z": [ 134 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_29": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 66 ],
-            "Z": [ 136 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_3": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 71 ],
-            "Z": [ 138 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_30": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 52 ],
-            "Z": [ 140 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_31": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 51 ],
-            "Z": [ 142 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_4": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 77 ],
-            "Z": [ 144 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_5": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 76 ],
-            "Z": [ 146 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_6": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 82 ],
-            "Z": [ 148 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_7": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 81 ],
-            "Z": [ 150 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_8": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 87 ],
-            "Z": [ 152 ]
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_9": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 156 ],
-            "D": [ 86 ],
-            "Z": [ 154 ]
-          }
-        },
         "counter_TRELLIS_FF_Q_LSR_LUT4_Z": {
           "hide_name": 0,
           "type": "LUT4",
@@ -24391,7 +23592,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:33.21-33.29|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:41.33-41.41|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -24414,12 +23615,12 @@
             "B1": [ "0" ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 157 ],
-            "COUT": [ 158 ],
+            "CIN": [ 156 ],
+            "COUT": [ 157 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 159 ],
-            "S1": [ 160 ]
+            "S0": [ 158 ],
+            "S1": [ 159 ]
           }
         },
         "leds_CCU2C_B0_1": {
@@ -24433,7 +23634,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:33.21-33.29|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:41.33-41.41|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -24456,12 +23657,12 @@
             "B1": [ 10 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 161 ],
-            "COUT": [ 157 ],
+            "CIN": [ 160 ],
+            "COUT": [ 156 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 162 ],
-            "S1": [ 163 ]
+            "S0": [ 161 ],
+            "S1": [ 162 ]
           }
         },
         "leds_CCU2C_B0_2": {
@@ -24475,7 +23676,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:33.21-33.29|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:41.33-41.41|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -24498,12 +23699,12 @@
             "B1": [ 8 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 164 ],
-            "COUT": [ 161 ],
+            "CIN": [ 163 ],
+            "COUT": [ 160 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 165 ],
-            "S1": [ 166 ]
+            "S0": [ 164 ],
+            "S1": [ 165 ]
           }
         },
         "leds_CCU2C_B0_3": {
@@ -24517,7 +23718,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:33.21-33.29|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "fsm_mealy.v:41.33-41.41|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -24541,18 +23742,18 @@
             "C0": [ "0" ],
             "C1": [ "0" ],
             "CIN": [ "0" ],
-            "COUT": [ 164 ],
+            "COUT": [ 163 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 167 ],
-            "S1": [ 168 ]
+            "S0": [ 166 ],
+            "S1": [ 167 ]
           }
         },
         "leds_TRELLIS_FF_Q": {
           "hide_name": 0,
           "type": "TRELLIS_FF",
           "parameters": {
-            "CEMUX": "1 ",
+            "CEMUX": "CE",
             "CLKMUX": "CLK",
             "GSR": "DISABLED",
             "LSRMUX": "LSR",
@@ -24561,18 +23762,20 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:29.5-35.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:28.5-55.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
+            "CE": "input",
             "CLK": "input",
             "DI": "input",
             "LSR": "input",
             "Q": "output"
           },
           "connections": {
-            "CLK": [ 169 ],
-            "DI": [ 159 ],
-            "LSR": [ 170 ],
+            "CE": [ 168 ],
+            "CLK": [ 2 ],
+            "DI": [ 158 ],
+            "LSR": [ 169 ],
             "Q": [ 11 ]
           }
         },
@@ -24580,7 +23783,7 @@
           "hide_name": 0,
           "type": "TRELLIS_FF",
           "parameters": {
-            "CEMUX": "1 ",
+            "CEMUX": "CE",
             "CLKMUX": "CLK",
             "GSR": "DISABLED",
             "LSRMUX": "LSR",
@@ -24589,18 +23792,20 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:29.5-35.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:28.5-55.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
+            "CE": "input",
             "CLK": "input",
             "DI": "input",
             "LSR": "input",
             "Q": "output"
           },
           "connections": {
-            "CLK": [ 169 ],
-            "DI": [ 163 ],
-            "LSR": [ 171 ],
+            "CE": [ 168 ],
+            "CLK": [ 2 ],
+            "DI": [ 162 ],
+            "LSR": [ 170 ],
             "Q": [ 10 ]
           }
         },
@@ -24626,14 +23831,14 @@
             "B": [ "0" ],
             "C": [ "0" ],
             "D": [ 3 ],
-            "Z": [ 171 ]
+            "Z": [ 170 ]
           }
         },
         "leds_TRELLIS_FF_Q_2": {
           "hide_name": 0,
           "type": "TRELLIS_FF",
           "parameters": {
-            "CEMUX": "1 ",
+            "CEMUX": "CE",
             "CLKMUX": "CLK",
             "GSR": "DISABLED",
             "LSRMUX": "LSR",
@@ -24642,18 +23847,20 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:29.5-35.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:28.5-55.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
+            "CE": "input",
             "CLK": "input",
             "DI": "input",
             "LSR": "input",
             "Q": "output"
           },
           "connections": {
-            "CLK": [ 169 ],
-            "DI": [ 162 ],
-            "LSR": [ 172 ],
+            "CE": [ 168 ],
+            "CLK": [ 2 ],
+            "DI": [ 161 ],
+            "LSR": [ 171 ],
             "Q": [ 9 ]
           }
         },
@@ -24679,14 +23886,14 @@
             "B": [ "0" ],
             "C": [ "0" ],
             "D": [ 3 ],
-            "Z": [ 172 ]
+            "Z": [ 171 ]
           }
         },
         "leds_TRELLIS_FF_Q_3": {
           "hide_name": 0,
           "type": "TRELLIS_FF",
           "parameters": {
-            "CEMUX": "1 ",
+            "CEMUX": "CE",
             "CLKMUX": "CLK",
             "GSR": "DISABLED",
             "LSRMUX": "LSR",
@@ -24695,18 +23902,20 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:29.5-35.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:28.5-55.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
+            "CE": "input",
             "CLK": "input",
             "DI": "input",
             "LSR": "input",
             "Q": "output"
           },
           "connections": {
-            "CLK": [ 169 ],
-            "DI": [ 166 ],
-            "LSR": [ 173 ],
+            "CE": [ 168 ],
+            "CLK": [ 2 ],
+            "DI": [ 165 ],
+            "LSR": [ 172 ],
             "Q": [ 8 ]
           }
         },
@@ -24732,14 +23941,14 @@
             "B": [ "0" ],
             "C": [ "0" ],
             "D": [ 3 ],
-            "Z": [ 173 ]
+            "Z": [ 172 ]
           }
         },
         "leds_TRELLIS_FF_Q_4": {
           "hide_name": 0,
           "type": "TRELLIS_FF",
           "parameters": {
-            "CEMUX": "1 ",
+            "CEMUX": "CE",
             "CLKMUX": "CLK",
             "GSR": "DISABLED",
             "LSRMUX": "LSR",
@@ -24748,18 +23957,20 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:29.5-35.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:28.5-55.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
+            "CE": "input",
             "CLK": "input",
             "DI": "input",
             "LSR": "input",
             "Q": "output"
           },
           "connections": {
-            "CLK": [ 169 ],
-            "DI": [ 165 ],
-            "LSR": [ 174 ],
+            "CE": [ 168 ],
+            "CLK": [ 2 ],
+            "DI": [ 164 ],
+            "LSR": [ 173 ],
             "Q": [ 7 ]
           }
         },
@@ -24785,14 +23996,14 @@
             "B": [ "0" ],
             "C": [ "0" ],
             "D": [ 3 ],
-            "Z": [ 174 ]
+            "Z": [ 173 ]
           }
         },
         "leds_TRELLIS_FF_Q_5": {
           "hide_name": 0,
           "type": "TRELLIS_FF",
           "parameters": {
-            "CEMUX": "1 ",
+            "CEMUX": "CE",
             "CLKMUX": "CLK",
             "GSR": "DISABLED",
             "LSRMUX": "LSR",
@@ -24801,18 +24012,20 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:29.5-35.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:28.5-55.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
+            "CE": "input",
             "CLK": "input",
             "DI": "input",
             "LSR": "input",
             "Q": "output"
           },
           "connections": {
-            "CLK": [ 169 ],
-            "DI": [ 168 ],
-            "LSR": [ 175 ],
+            "CE": [ 168 ],
+            "CLK": [ 2 ],
+            "DI": [ 167 ],
+            "LSR": [ 174 ],
             "Q": [ 6 ]
           }
         },
@@ -24838,14 +24051,14 @@
             "B": [ "0" ],
             "C": [ "0" ],
             "D": [ 3 ],
-            "Z": [ 175 ]
+            "Z": [ 174 ]
           }
         },
         "leds_TRELLIS_FF_Q_6": {
           "hide_name": 0,
           "type": "TRELLIS_FF",
           "parameters": {
-            "CEMUX": "1 ",
+            "CEMUX": "CE",
             "CLKMUX": "CLK",
             "GSR": "DISABLED",
             "LSRMUX": "LSR",
@@ -24854,18 +24067,20 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:29.5-35.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "fsm_mealy.v:28.5-55.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
+            "CE": "input",
             "CLK": "input",
             "DI": "input",
             "LSR": "input",
             "Q": "output"
           },
           "connections": {
-            "CLK": [ 169 ],
-            "DI": [ 167 ],
-            "LSR": [ 176 ],
+            "CE": [ 168 ],
+            "CLK": [ 2 ],
+            "DI": [ 166 ],
+            "LSR": [ 175 ],
             "Q": [ 5 ]
           }
         },
@@ -24891,7 +24106,1004 @@
             "B": [ "0" ],
             "C": [ "0" ],
             "D": [ 3 ],
+            "Z": [ 175 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 176 ],
+            "B": [ 177 ],
+            "C": [ 178 ],
+            "D": [ 179 ],
+            "Z": [ 168 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 58 ],
+            "B1": [ 59 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 180 ],
+            "COUT": [ 178 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 181 ],
+            "S1": [ 182 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "1" ],
+            "A1": [ "1" ],
+            "B0": [ 12 ],
+            "B1": [ 13 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 183 ],
+            "COUT": [ 184 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 185 ],
+            "S1": [ 186 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_1": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "1" ],
+            "A1": [ "1" ],
+            "B0": [ 18 ],
+            "B1": [ 19 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 187 ],
+            "COUT": [ 183 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 188 ],
+            "S1": [ 189 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_10": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 29 ],
+            "B1": [ 30 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 190 ],
+            "COUT": [ 191 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 192 ],
+            "S1": [ 193 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_11": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "1" ],
+            "B0": [ 34 ],
+            "B1": [ 35 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 194 ],
+            "COUT": [ 190 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 195 ],
+            "S1": [ 196 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_12": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "1" ],
+            "A1": [ "0" ],
+            "B0": [ 39 ],
+            "B1": [ 40 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 197 ],
+            "COUT": [ 194 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 198 ],
+            "S1": [ 199 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_13": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 44 ],
+            "B1": [ 45 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 184 ],
+            "COUT": [ 197 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 200 ],
+            "S1": [ 201 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_14": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 48 ],
+            "B1": [ 49 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ "1" ],
+            "COUT": [ 202 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 203 ],
+            "S1": [ 204 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_2": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "1" ],
+            "B0": [ 53 ],
+            "B1": [ 54 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 205 ],
+            "COUT": [ 187 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 206 ],
+            "S1": [ 207 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_3": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 64 ],
+            "B1": [ 65 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 202 ],
+            "COUT": [ 205 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 208 ],
+            "S1": [ 209 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_4": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 68 ],
+            "B1": [ 69 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 210 ],
+            "COUT": [ 180 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 211 ],
+            "S1": [ 212 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_5": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 73 ],
+            "B1": [ 74 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 213 ],
+            "COUT": [ 210 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 214 ],
+            "S1": [ 215 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_6": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 78 ],
+            "B1": [ 79 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 216 ],
+            "COUT": [ 213 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 217 ],
+            "S1": [ 218 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_7": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 83 ],
+            "B1": [ 84 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 219 ],
+            "COUT": [ 216 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 220 ],
+            "S1": [ 221 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_8": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "0" ],
+            "A1": [ "0" ],
+            "B0": [ 88 ],
+            "B1": [ 89 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 222 ],
+            "COUT": [ 219 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 223 ],
+            "S1": [ 224 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_9": {
+          "hide_name": 0,
+          "type": "CCU2C",
+          "parameters": {
+            "INIT0": "1001011010101010",
+            "INIT1": "1001011010101010",
+            "INJECT1_0": "NO",
+            "INJECT1_1": "NO"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:74.7-80.4"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "B0": "input",
+            "B1": "input",
+            "C0": "input",
+            "C1": "input",
+            "CIN": "input",
+            "COUT": "output",
+            "D0": "input",
+            "D1": "input",
+            "S0": "output",
+            "S1": "output"
+          },
+          "connections": {
+            "A0": [ "1" ],
+            "A1": [ "0" ],
+            "B0": [ 23 ],
+            "B1": [ 24 ],
+            "C0": [ "1" ],
+            "C1": [ "1" ],
+            "CIN": [ 191 ],
+            "COUT": [ 222 ],
+            "D0": [ "1" ],
+            "D1": [ "1" ],
+            "S0": [ 225 ],
+            "S1": [ 226 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 227 ],
+            "D": [ 228 ],
+            "Z": [ 229 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_1": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000001100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 4 ],
+            "D": [ 227 ],
+            "Z": [ 179 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_2": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 230 ],
+            "B": [ 231 ],
+            "C": [ 232 ],
+            "D": [ 233 ],
+            "Z": [ 177 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_2_A_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 45 ],
+            "B": [ 78 ],
+            "C": [ 69 ],
+            "D": [ 23 ],
+            "Z": [ 233 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_2_A_LUT4_Z_1": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0100000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 48 ],
+            "B": [ 18 ],
+            "C": [ 12 ],
+            "D": [ 35 ],
+            "Z": [ 232 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_2_A_LUT4_Z_2": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 59 ],
+            "B": [ 44 ],
+            "C": [ 34 ],
+            "D": [ 29 ],
+            "Z": [ 231 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_2_A_LUT4_Z_3": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 89 ],
+            "B": [ 83 ],
+            "C": [ 79 ],
+            "D": [ 68 ],
+            "Z": [ 230 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_3": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 234 ],
+            "B": [ 235 ],
+            "C": [ 236 ],
+            "D": [ 237 ],
             "Z": [ 176 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_3_A_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 64 ],
+            "B": [ 53 ],
+            "C": [ 24 ],
+            "D": [ 58 ],
+            "Z": [ 237 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_3_A_LUT4_Z_1": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 54 ],
+            "B": [ 19 ],
+            "C": [ 13 ],
+            "D": [ 39 ],
+            "Z": [ 236 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_3_A_LUT4_Z_2": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 88 ],
+            "B": [ 84 ],
+            "C": [ 73 ],
+            "D": [ 74 ],
+            "Z": [ 235 ]
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_3_A_LUT4_Z_3": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 49 ],
+            "B": [ 65 ],
+            "C": [ 40 ],
+            "D": [ 30 ],
+            "Z": [ 234 ]
           }
         },
         "leds_TRELLIS_FF_Q_LSR_LUT4_Z": {
@@ -24916,1183 +25128,14 @@
             "B": [ "0" ],
             "C": [ "0" ],
             "D": [ 3 ],
-            "Z": [ 170 ]
+            "Z": [ 169 ]
           }
         },
-        "oneSecond_TRELLIS_FF_Q": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "CE",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "blink.v:37.5-46.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:56.101-56.163"
-          },
-          "port_directions": {
-            "CE": "input",
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CE": [ 177 ],
-            "CLK": [ 2 ],
-            "DI": [ 178 ],
-            "LSR": [ "0" ],
-            "Q": [ 169 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z": {
+        "state_LUT4_B": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
-            "INIT": "1111000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 3 ],
-            "D": [ 156 ],
-            "Z": [ 177 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z": {
-          "hide_name": 0,
-          "type": "L6MUX21",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:185.21-185.63"
-          },
-          "port_directions": {
-            "D0": "input",
-            "D1": "input",
-            "SD": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "D0": [ 179 ],
-            "D1": [ 180 ],
-            "SD": [ 181 ],
-            "Z": [ 156 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z": {
-          "hide_name": 0,
-          "type": "L6MUX21",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:183.21-183.64"
-          },
-          "port_directions": {
-            "D0": "input",
-            "D1": "input",
-            "SD": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "D0": [ 182 ],
-            "D1": [ 183 ],
-            "SD": [ 184 ],
-            "Z": [ 179 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:179.19-179.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 185 ],
-            "BLUT": [ 186 ],
-            "C0": [ 187 ],
-            "Z": [ 182 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:161.39-162.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 185 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:159.39-160.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 186 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:180.19-180.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 188 ],
-            "BLUT": [ 189 ],
-            "C0": [ 187 ],
-            "Z": [ 183 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:166.39-167.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 188 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:164.39-165.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 189 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z": {
-          "hide_name": 0,
-          "type": "L6MUX21",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:184.21-184.64"
-          },
-          "port_directions": {
-            "D0": "input",
-            "D1": "input",
-            "SD": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "D0": [ 190 ],
-            "D1": [ 191 ],
-            "SD": [ 184 ],
-            "Z": [ 180 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:181.19-181.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 192 ],
-            "BLUT": [ 193 ],
-            "C0": [ 187 ],
-            "Z": [ 190 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:171.39-172.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 192 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:169.39-170.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 193 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:182.19-182.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 194 ],
-            "BLUT": [ 195 ],
-            "C0": [ 187 ],
-            "Z": [ 191 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "1000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:176.41-177.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ 196 ],
-            "B": [ 197 ],
-            "C": [ 198 ],
-            "D": [ 199 ],
-            "Z": [ 194 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:174.41-175.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 195 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z": {
-          "hide_name": 0,
-          "type": "L6MUX21",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:155.21-155.62"
-          },
-          "port_directions": {
-            "D0": "input",
-            "D1": "input",
-            "SD": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "D0": [ 200 ],
-            "D1": [ 201 ],
-            "SD": [ 69 ],
-            "Z": [ 184 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1": {
-          "hide_name": 0,
-          "type": "L6MUX21",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:155.21-155.62"
-          },
-          "port_directions": {
-            "D0": "input",
-            "D1": "input",
-            "SD": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "D0": [ 202 ],
-            "D1": [ 203 ],
-            "SD": [ 89 ],
-            "Z": [ 198 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:153.19-153.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 204 ],
-            "BLUT": [ 205 ],
-            "C0": [ 34 ],
-            "Z": [ 202 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:145.39-146.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 204 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:143.39-144.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 205 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:154.19-154.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 206 ],
-            "BLUT": [ 207 ],
-            "C0": [ 34 ],
-            "Z": [ 203 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:150.39-151.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ 49 ],
-            "B": [ 65 ],
-            "C": [ 30 ],
-            "D": [ 12 ],
-            "Z": [ 206 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:148.39-149.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 207 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2": {
-          "hide_name": 0,
-          "type": "L6MUX21",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:185.21-185.63"
-          },
-          "port_directions": {
-            "D0": "input",
-            "D1": "input",
-            "SD": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "D0": [ 208 ],
-            "D1": [ 209 ],
-            "SD": [ 18 ],
-            "Z": [ 197 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z": {
-          "hide_name": 0,
-          "type": "L6MUX21",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:183.21-183.64"
-          },
-          "port_directions": {
-            "D0": "input",
-            "D1": "input",
-            "SD": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "D0": [ 210 ],
-            "D1": [ 211 ],
-            "SD": [ 23 ],
-            "Z": [ 208 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:179.19-179.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 212 ],
-            "BLUT": [ 213 ],
-            "C0": [ 35 ],
-            "Z": [ 210 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:161.39-162.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 212 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:159.39-160.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 213 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:180.19-180.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 214 ],
-            "BLUT": [ 215 ],
-            "C0": [ 35 ],
-            "Z": [ 211 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:166.39-167.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 214 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:164.39-165.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 215 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z": {
-          "hide_name": 0,
-          "type": "L6MUX21",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:184.21-184.64"
-          },
-          "port_directions": {
-            "D0": "input",
-            "D1": "input",
-            "SD": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "D0": [ 216 ],
-            "D1": [ 217 ],
-            "SD": [ 23 ],
-            "Z": [ 209 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:181.19-181.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 218 ],
-            "BLUT": [ 219 ],
-            "C0": [ 35 ],
-            "Z": [ 216 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:171.39-172.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 218 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:169.39-170.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 219 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:182.19-182.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 220 ],
-            "BLUT": [ 221 ],
-            "C0": [ 35 ],
-            "Z": [ 217 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:176.41-177.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ 54 ],
-            "B": [ 79 ],
-            "C": [ 73 ],
-            "D": [ 59 ],
-            "Z": [ 220 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:174.41-175.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 221 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:153.19-153.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 222 ],
-            "BLUT": [ 223 ],
-            "C0": [ 68 ],
-            "Z": [ 200 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:145.39-146.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 222 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:143.39-144.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ 13 ],
-            "B": [ 44 ],
-            "C": [ 45 ],
-            "D": [ 39 ],
-            "Z": [ 223 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:154.19-154.65"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 224 ],
-            "BLUT": [ 225 ],
-            "C0": [ 68 ],
-            "Z": [ 201 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:150.39-151.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 224 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:148.39-149.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 225 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ 64 ],
-            "D": [ 40 ],
-            "Z": [ 181 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_LUT4_Z_1": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0001000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ 48 ],
-            "B": [ 24 ],
-            "C": [ 83 ],
-            "D": [ 84 ],
-            "Z": [ 187 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_LUT4_Z_2": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:129.32-130.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ 53 ],
-            "B": [ 29 ],
-            "C": [ 88 ],
-            "D": [ 19 ],
-            "Z": [ 199 ]
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_LUT4_Z_3": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0000000000000011"
+            "INIT": "0011000000000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -26107,13 +25150,848 @@
           },
           "connections": {
             "A": [ "0" ],
-            "B": [ 78 ],
-            "C": [ 74 ],
-            "D": [ 58 ],
-            "Z": [ 196 ]
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 63 ],
+            "Z": [ 92 ]
           }
         },
-        "oneSecond_TRELLIS_FF_Q_DI_LUT4_Z": {
+        "state_LUT4_B_1": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 62 ],
+            "Z": [ 94 ]
+          }
+        },
+        "state_LUT4_B_10": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 91 ],
+            "Z": [ 96 ]
+          }
+        },
+        "state_LUT4_B_11": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 90 ],
+            "Z": [ 98 ]
+          }
+        },
+        "state_LUT4_B_12": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 28 ],
+            "Z": [ 100 ]
+          }
+        },
+        "state_LUT4_B_13": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 27 ],
+            "Z": [ 102 ]
+          }
+        },
+        "state_LUT4_B_14": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 33 ],
+            "Z": [ 104 ]
+          }
+        },
+        "state_LUT4_B_15": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 32 ],
+            "Z": [ 106 ]
+          }
+        },
+        "state_LUT4_B_16": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 38 ],
+            "Z": [ 108 ]
+          }
+        },
+        "state_LUT4_B_17": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 37 ],
+            "Z": [ 110 ]
+          }
+        },
+        "state_LUT4_B_18": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 43 ],
+            "Z": [ 112 ]
+          }
+        },
+        "state_LUT4_B_19": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 42 ],
+            "Z": [ 114 ]
+          }
+        },
+        "state_LUT4_B_2": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 72 ],
+            "Z": [ 116 ]
+          }
+        },
+        "state_LUT4_B_20": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 47 ],
+            "Z": [ 118 ]
+          }
+        },
+        "state_LUT4_B_21": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 46 ],
+            "Z": [ 120 ]
+          }
+        },
+        "state_LUT4_B_22": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 17 ],
+            "Z": [ 122 ]
+          }
+        },
+        "state_LUT4_B_23": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 16 ],
+            "Z": [ 124 ]
+          }
+        },
+        "state_LUT4_B_24": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 22 ],
+            "Z": [ 126 ]
+          }
+        },
+        "state_LUT4_B_25": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 21 ],
+            "Z": [ 128 ]
+          }
+        },
+        "state_LUT4_B_26": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 57 ],
+            "Z": [ 130 ]
+          }
+        },
+        "state_LUT4_B_27": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 56 ],
+            "Z": [ 132 ]
+          }
+        },
+        "state_LUT4_B_28": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 67 ],
+            "Z": [ 134 ]
+          }
+        },
+        "state_LUT4_B_29": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 66 ],
+            "Z": [ 136 ]
+          }
+        },
+        "state_LUT4_B_3": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 71 ],
+            "Z": [ 138 ]
+          }
+        },
+        "state_LUT4_B_30": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 52 ],
+            "Z": [ 140 ]
+          }
+        },
+        "state_LUT4_B_31": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 51 ],
+            "Z": [ 142 ]
+          }
+        },
+        "state_LUT4_B_4": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 77 ],
+            "Z": [ 144 ]
+          }
+        },
+        "state_LUT4_B_5": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 76 ],
+            "Z": [ 146 ]
+          }
+        },
+        "state_LUT4_B_6": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 82 ],
+            "Z": [ 148 ]
+          }
+        },
+        "state_LUT4_B_7": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 81 ],
+            "Z": [ 150 ]
+          }
+        },
+        "state_LUT4_B_8": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 87 ],
+            "Z": [ 152 ]
+          }
+        },
+        "state_LUT4_B_9": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 228 ],
+            "C": [ 227 ],
+            "D": [ 86 ],
+            "Z": [ 154 ]
+          }
+        },
+        "state_TRELLIS_FF_Q": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "CE",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:28.5-55.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:73.163-73.222"
+          },
+          "port_directions": {
+            "CE": "input",
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CE": [ 238 ],
+            "CLK": [ 2 ],
+            "DI": [ 239 ],
+            "LSR": [ 240 ],
+            "Q": [ 228 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_1": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "CE",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:28.5-55.8|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:73.163-73.222"
+          },
+          "port_directions": {
+            "CE": "input",
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CE": [ 238 ],
+            "CLK": [ 2 ],
+            "DI": [ 241 ],
+            "LSR": [ 242 ],
+            "Q": [ 227 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_1_LSR_LUT4_Z": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
@@ -26134,8 +26012,227 @@
             "A": [ "0" ],
             "B": [ "0" ],
             "C": [ "0" ],
-            "D": [ 169 ],
-            "Z": [ 178 ]
+            "D": [ 3 ],
+            "Z": [ 242 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_CE_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:120.33-121.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ 229 ],
+            "D": [ 4 ],
+            "Z": [ 238 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:139.19-139.63"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 243 ],
+            "BLUT": [ 244 ],
+            "C0": [ 179 ],
+            "Z": [ 239 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_1": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:139.19-139.63"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 245 ],
+            "BLUT": [ 246 ],
+            "C0": [ 178 ],
+            "Z": [ 241 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_1_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111011111110000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:137.39-138.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 176 ],
+            "B": [ 177 ],
+            "C": [ 229 ],
+            "D": [ 179 ],
+            "Z": [ 245 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_1_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:135.39-136.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ 229 ],
+            "Z": [ 246 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111111110001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:137.39-138.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 177 ],
+            "B": [ 176 ],
+            "C": [ 178 ],
+            "D": [ 247 ],
+            "Z": [ 243 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:135.39-136.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ 247 ],
+            "Z": [ 244 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_BLUT_LUT4_Z_D_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000001100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:125.33-126.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 227 ],
+            "C": [ 4 ],
+            "D": [ 228 ],
+            "Z": [ 247 ]
+          }
+        },
+        "state_TRELLIS_FF_Q_LSR_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000011111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:115.33-116.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ 3 ],
+            "Z": [ 240 ]
           }
         }
       },
@@ -26144,53 +26241,61 @@
           "hide_name": 0,
           "bits": [ 5, 6, 7, 8, 9, 10, 11 ],
           "attributes": {
-            "src": "blink.v:13.18-13.21"
+            "src": "fsm_mealy.v:5.18-5.21"
           }
         },
         "LEDC": {
           "hide_name": 0,
           "bits": [ "0", "1", "0" ],
           "attributes": {
-            "src": "blink.v:14.18-14.22"
+            "src": "fsm_mealy.v:6.18-6.22"
           }
         },
         "button": {
           "hide_name": 0,
           "bits": [ 3, 4 ],
           "attributes": {
-            "src": "blink.v:12.17-12.23"
+            "src": "fsm_mealy.v:4.17-4.23"
           }
         },
         "clk30": {
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "blink.v:11.11-11.16"
+            "src": "fsm_mealy.v:3.11-3.16"
           }
         },
         "counter": {
           "hide_name": 0,
           "bits": [ 48, 49, 64, 65, 53, 54, 18, 19, 12, 13, 44, 45, 39, 40, 34, 35, 29, 30, 23, 24, 88, 89, 83, 84, 78, 79, 73, 74, 68, 69, 58, 59 ],
           "attributes": {
-            "src": "blink.v:22.16-22.23"
+            "src": "fsm_mealy.v:19.16-19.23"
           }
         },
         "counter_CCU2C_B0_3_COUT": {
           "hide_name": 0,
-          "bits": [ 48, 50, 226, 55, 227, 20, 228, 14, 229, 15, 230, 41, 231, 36, 232, 31, 233, 25, 234, 26, 235, 85, 236, 80, 237, 75, 238, 70, 239, 60, 240, 61 ],
+          "bits": [ 48, 50, 248, 55, 249, 20, 250, 14, 251, 15, 252, 41, 253, 36, 254, 31, 255, 25, 256, 26, 257, 85, 258, 80, 259, 75, 260, 70, 261, 60, 262, 61 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:38.23-38.25",
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:38.23-38.25",
             "unused_bits": "2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 31"
           }
         },
         "counter_CCU2C_B0_COUT": {
           "hide_name": 0,
-          "bits": [ "0", 48, 50, 226, 55, 227, 20, 228, 14, 229, 15, 230, 41, 231, 36, 232, 31, 233, 25, 234, 26, 235, 85, 236, 80, 237, 75, 238, 70, 239, 60, 240 ],
+          "bits": [ "0", 48, 50, 248, 55, 249, 20, 250, 14, 251, 15, 252, 41, 253, 36, 254, 31, 255, 25, 256, 26, 257, 85, 258, 80, 259, 75, 260, 70, 261, 60, 262 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:63.22-63.23",
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:63.22-63.23",
             "unused_bits": "3 5 7 9 11 13 15 17 19 21 23 25 27 29 31"
+          }
+        },
+        "counter_CCU2C_B0_S0": {
+          "hide_name": 0,
+          "bits": [ 51, 52, 66, 67, 56, 57, 21, 22, 16, 17, 46, 47, 42, 43, 37, 38, 32, 33, 27, 28, 90, 91, 86, 87, 81, 82, 76, 77, 71, 72, 62, 63 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:62.24-62.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:34.26-34.27"
           }
         },
         "counter_TRELLIS_FF_Q_10_LSR": {
@@ -26383,15 +26488,7 @@
           "hide_name": 0,
           "bits": [ 142, 140, 136, 134, 132, 130, 128, 126, 124, 122, 120, 118, 114, 112, 110, 108, 106, 104, 102, 100, 98, 96, 154, 152, 150, 148, 146, 144, 138, 116, 94, 92 ],
           "attributes": {
-            "src": "blink.v:37.5-46.8"
-          }
-        },
-        "counter_TRELLIS_FF_Q_DI_LUT4_Z_D": {
-          "hide_name": 0,
-          "bits": [ 51, 52, 66, 67, 56, 57, 21, 22, 16, 17, 46, 47, 42, 43, 37, 38, 32, 33, 27, 28, 90, 91, 86, 87, 81, 82, 76, 77, 71, 72, 62, 63 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:44.24-44.35|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:34.26-34.27"
+            "src": "fsm_mealy.v:58.5-66.8"
           }
         },
         "counter_TRELLIS_FF_Q_LSR": {
@@ -26400,404 +26497,212 @@
           "attributes": {
           }
         },
+        "dividedClock": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "fsm_mealy.v:21.9-21.21"
+          }
+        },
         "leds": {
           "hide_name": 0,
           "bits": [ 5, 6, 7, 8, 9, 10, 11 ],
           "attributes": {
-            "src": "blink.v:26.15-26.19"
+            "src": "fsm_mealy.v:25.15-25.19"
           }
         },
         "leds_CCU2C_B0_3_COUT": {
           "hide_name": 0,
-          "bits": [ "0", 5, 164, 241, 161, 242, 157, 243 ],
+          "bits": [ "0", 5, 163, 263, 160, 264, 156, 265 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:33.21-33.29|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:63.22-63.23",
+            "src": "fsm_mealy.v:41.33-41.41|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:63.22-63.23",
             "unused_bits": "3 5 7"
           }
         },
         "leds_CCU2C_B0_COUT": {
           "hide_name": 0,
-          "bits": [ 164, 244, 161, 245, 157, 246, 158, 247 ],
+          "bits": [ 163, 266, 160, 267, 156, 268, 157, 269 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:33.21-33.29|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:65.22-65.25",
+            "src": "fsm_mealy.v:41.33-41.41|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:65.22-65.25",
             "unused_bits": "1 3 5 6 7"
           }
         },
         "leds_CCU2C_B0_S1": {
           "hide_name": 0,
-          "bits": [ 168, 248, 166, 249, 163, 250, 160, 251 ],
+          "bits": [ 167, 270, 165, 271, 162, 272, 159, 273 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:33.21-33.29|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:65.27-65.29",
+            "src": "fsm_mealy.v:41.33-41.41|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:65.27-65.29",
             "unused_bits": "1 3 5 6 7"
           }
         },
         "leds_TRELLIS_FF_Q_1_LSR": {
           "hide_name": 0,
-          "bits": [ 171 ],
+          "bits": [ 170 ],
           "attributes": {
           }
         },
         "leds_TRELLIS_FF_Q_2_LSR": {
           "hide_name": 0,
-          "bits": [ 172 ],
+          "bits": [ 171 ],
           "attributes": {
           }
         },
         "leds_TRELLIS_FF_Q_3_LSR": {
           "hide_name": 0,
-          "bits": [ 173 ],
+          "bits": [ 172 ],
           "attributes": {
           }
         },
         "leds_TRELLIS_FF_Q_4_LSR": {
           "hide_name": 0,
-          "bits": [ 174 ],
+          "bits": [ 173 ],
           "attributes": {
           }
         },
         "leds_TRELLIS_FF_Q_5_LSR": {
           "hide_name": 0,
-          "bits": [ 175 ],
+          "bits": [ 174 ],
           "attributes": {
           }
         },
         "leds_TRELLIS_FF_Q_6_LSR": {
           "hide_name": 0,
-          "bits": [ 176 ],
+          "bits": [ 175 ],
           "attributes": {
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE": {
+          "hide_name": 0,
+          "bits": [ 168 ],
+          "attributes": {
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A": {
+          "hide_name": 0,
+          "bits": [ 176, 177, 229, 179, 178 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:109.23-109.24"
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0": {
+          "hide_name": 0,
+          "bits": [ 203, 204, 208, 209, 206, 207, 188, 189, 185, 186, 200, 201, 198, 199, 195, 196, 192, 193, 225, 226, 223, 224, 220, 221, 217, 218, 214, 215, 211, 212, 181, 182 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:34.26-34.27",
+            "unused_bits": "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_CCU2C_COUT_S0_CCU2C_S0_COUT": {
+          "hide_name": 0,
+          "bits": [ "1", 274, 202, 275, 205, 276, 187, 277, 183, 278, 184, 279, 197, 280, 194, 281, 190, 282, 191, 283, 222, 284, 219, 285, 216, 286, 213, 287, 210, 288, 180, 289 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:40.40-40.69|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:63.22-63.23",
+            "unused_bits": "1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31"
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_2_A": {
+          "hide_name": 0,
+          "bits": [ 230, 231, 232, 233 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:109.23-109.24"
+          }
+        },
+        "leds_TRELLIS_FF_Q_CE_LUT4_Z_A_LUT4_Z_3_A": {
+          "hide_name": 0,
+          "bits": [ 234, 235, 236, 237 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:109.23-109.24"
           }
         },
         "leds_TRELLIS_FF_Q_DI": {
           "hide_name": 0,
-          "bits": [ 167, 168, 165, 166, 162, 163, 159 ],
+          "bits": [ 166, 167, 164, 165, 161, 162, 158 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "blink.v:33.21-33.29|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:34.26-34.27"
+            "src": "fsm_mealy.v:41.33-41.41|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/arith_map.v:34.26-34.27"
           }
         },
         "leds_TRELLIS_FF_Q_LSR": {
           "hide_name": 0,
-          "bits": [ 170 ],
-          "attributes": {
-          }
-        },
-        "oneSecond": {
-          "hide_name": 0,
           "bits": [ 169 ],
           "attributes": {
-            "src": "blink.v:24.9-24.18"
           }
         },
-        "oneSecond_TRELLIS_FF_Q_CE": {
+        "state": {
           "hide_name": 0,
-          "bits": [ 177 ],
+          "bits": [ 227, 228 ],
+          "attributes": {
+            "src": "fsm_mealy.v:23.15-23.20"
+          }
+        },
+        "state_TRELLIS_FF_Q_1_LSR": {
+          "hide_name": 0,
+          "bits": [ 242 ],
           "attributes": {
           }
         },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D": {
+        "state_TRELLIS_FF_Q_CE": {
           "hide_name": 0,
-          "bits": [ 156, 77 ],
+          "bits": [ 238 ],
+          "attributes": {
+          }
+        },
+        "state_TRELLIS_FF_Q_DI": {
+          "hide_name": 0,
+          "bits": [ 241, 239 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "fsm_mealy.v:0.0-0.0|fsm_mealy.v:33.13-53.20|C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/techmap.v:575.21-575.22"
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_1_ALUT": {
+          "hide_name": 0,
+          "bits": [ 245 ],
+          "attributes": {
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:134.22-134.24"
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_1_BLUT": {
+          "hide_name": 0,
+          "bits": [ 246 ],
+          "attributes": {
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:134.18-134.20"
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_ALUT": {
+          "hide_name": 0,
+          "bits": [ 243 ],
+          "attributes": {
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:134.22-134.24"
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 244 ],
+          "attributes": {
+            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:134.18-134.20"
+          }
+        },
+        "state_TRELLIS_FF_Q_DI_PFUMX_Z_BLUT_LUT4_Z_D": {
+          "hide_name": 0,
+          "bits": [ 177, 176, 178, 247, 179 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:109.23-109.24"
           }
         },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0": {
+        "state_TRELLIS_FF_Q_LSR": {
           "hide_name": 0,
-          "bits": [ 179 ],
+          "bits": [ 240 ],
           "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.66-158.68"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0": {
-          "hide_name": 0,
-          "bits": [ 182 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.50-158.52"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 185 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.22-158.24"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 186 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.18-158.20"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1": {
-          "hide_name": 0,
-          "bits": [ 183 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.54-158.56"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 188 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.30-158.32"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 189 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.26-158.28"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1": {
-          "hide_name": 0,
-          "bits": [ 180 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.70-158.72"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0": {
-          "hide_name": 0,
-          "bits": [ 190 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.58-158.60"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 192 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.38-158.40"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 193 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.34-158.36"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1": {
-          "hide_name": 0,
-          "bits": [ 191 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.62-158.64"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 194 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.46-158.48"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 195 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.42-158.44"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD": {
-          "hide_name": 0,
-          "bits": [ 196, 197, 198, 199, 187, 184, 181 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:109.23-109.24"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0": {
-          "hide_name": 0,
-          "bits": [ 202 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.34-142.36"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 204 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.22-142.24"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D0_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 205 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.18-142.20"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1": {
-          "hide_name": 0,
-          "bits": [ 203 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.38-142.40"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 206 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.30-142.32"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_1_D1_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 207 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.26-142.28"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0": {
-          "hide_name": 0,
-          "bits": [ 208 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.66-158.68"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D0": {
-          "hide_name": 0,
-          "bits": [ 210 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.50-158.52"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 212 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.22-158.24"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 213 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.18-158.20"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D1": {
-          "hide_name": 0,
-          "bits": [ 211 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.54-158.56"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 214 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.30-158.32"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 215 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.26-158.28"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1": {
-          "hide_name": 0,
-          "bits": [ 209 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.70-158.72"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D0": {
-          "hide_name": 0,
-          "bits": [ 216 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.58-158.60"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 218 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.38-158.40"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 219 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.34-158.36"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D1": {
-          "hide_name": 0,
-          "bits": [ 217 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.62-158.64"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 220 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.46-158.48"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 221 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:158.42-158.44"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0": {
-          "hide_name": 0,
-          "bits": [ 200 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.34-142.36"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 222 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.22-142.24"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D0_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 223 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.18-142.20"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1": {
-          "hide_name": 0,
-          "bits": [ 201 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.38-142.40"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 224 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.30-142.32"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_CE_LUT4_Z_D_L6MUX21_Z_SD_L6MUX21_Z_D1_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 225 ],
-          "attributes": {
-            "src": "C:\\Users\\JD331\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ecp5/cells_map.v:142.26-142.28"
-          }
-        },
-        "oneSecond_TRELLIS_FF_Q_DI": {
-          "hide_name": 0,
-          "bits": [ 178 ],
-          "attributes": {
-            "src": "blink.v:42.25-42.35"
           }
         }
       }

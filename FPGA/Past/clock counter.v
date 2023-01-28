@@ -1,12 +1,4 @@
-/* Copyright 2020 Gregory Davill <greg.davill@gmail.com>
-   Hacked 2021 by Tommy Thorn
-*/
 `default_nettype none
-
-/*
- *  Blink an LED on the ButterStick r1.0 using Verilog
- */
-
 module top (
     input clk30,
     input [1:0] button,
