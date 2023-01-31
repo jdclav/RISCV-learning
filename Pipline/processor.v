@@ -324,7 +324,7 @@ module program_memory (
     reg [31:0] MEM [0:255];
 
     //Manual RISC-V assembly added to the memory to test functionality
-    `include "tools/riscv_assembly.v"
+    `include "../tools/riscv_assembly.v"
     integer L0_   = 12;
     integer L1_   = 32;
     integer wait_ = 64;   

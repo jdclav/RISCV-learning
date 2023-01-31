@@ -37,7 +37,7 @@ module top (
                     end
                 end
                 pressed: begin
-                    if((go == 1'b1) & (counter >= clk30frequency/100)) begin
+                    if((go == 1'b1) & (counter >= (clk30frequency/100) - 1)) begin
                         leds <= leds + 1;
                         state <= hold;
                     end else if (go == 0) begin

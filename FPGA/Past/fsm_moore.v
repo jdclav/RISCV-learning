@@ -75,7 +75,7 @@ module top (
     always @(posedge clk30 or posedge rst) begin
         if(rst == 1'b1) begin
             counter <= 0;
-        end else if(counter == (clk30frequency/4)) begin
+        end else if(counter == ((clk30frequency/4) - 1)) begin
             counter <= 0;
             dividedClock <= ~dividedClock;
         end else begin
